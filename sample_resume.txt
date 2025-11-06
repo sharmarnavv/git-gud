@@ -1,0 +1,52 @@
+SARAH JOHNSON
+Senior Software Engineer
+Email: sarah.johnson@email.com
+Phone: (555) 123-4567
+LinkedIn: linkedin.com/in/sarahjohnson
+Location: San Francisco, CA
+
+PROFESSIONAL SUMMARY
+Experienced software engineer with 6+ years developing scalable web applications.
+Expert in Python, JavaScript, and cloud technologies. Proven track record of
+leading teams and delivering high-quality software solutions.
+
+TECHNICAL SKILLS
+• Programming Languages: Python, JavaScript, TypeScript, Java
+• Web Frameworks: Django, Flask, React, Node.js, Express
+• Databases: PostgreSQL, MongoDB, Redis
+• Cloud Platforms: AWS (EC2, S3, Lambda, RDS)
+• DevOps: Docker, Kubernetes, Jenkins, CI/CD
+• Tools: Git, JIRA, Confluence
+• Other: Machine Learning, Data Analysis, Agile/Scrum
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Engineer | TechCorp Inc | 2021 - Present
+• Led development of microservices architecture serving 1M+ users daily
+• Implemented CI/CD pipelines reducing deployment time by 60%
+• Mentored team of 4 junior developers and conducted code reviews
+• Built RESTful APIs using Python Django and deployed on AWS
+• Collaborated with product managers to define technical requirements
+
+Software Developer | StartupXYZ | 2019 - 2021
+• Developed full-stack web applications using React and Node.js
+• Designed and implemented PostgreSQL database schemas
+• Integrated third-party APIs and payment processing systems
+• Participated in Agile development process and sprint planning
+• Improved application performance by 40% through optimization
+
+Junior Developer | WebSolutions Ltd | 2018 - 2019
+• Built responsive websites using HTML, CSS, and JavaScript
+• Worked with senior developers to learn best practices
+• Contributed to open-source projects and internal tools
+• Gained experience with version control and collaborative development
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of California, Berkeley | 2018
+GPA: 3.8/4.0
+
+CERTIFICATIONS
+• AWS Certified Solutions Architect - Associate (2022)
+• Certified Scrum Master (2021)
+• Python Professional Certification (2020)

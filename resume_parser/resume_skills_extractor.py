@@ -39,7 +39,7 @@ class ResumeSkillsExtractor(ResumeSkillsExtractorInterface):
         if self.semantic_matcher is None:
             try:
                 self.semantic_matcher = SemanticMatcher(
-                    model_name='all-MiniLM-L6-v2',
+                    model_name='./trained_model/trained_model',
                     threshold=0.5,  # Lower threshold for resume context
                     enable_caching=True
                 )

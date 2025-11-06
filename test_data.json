@@ -1,0 +1,26 @@
+[
+  {
+    "id": "job_1",
+    "title": "Senior Python Developer",
+    "company": "Tech Corp",
+    "description": "We are seeking a Senior Python Developer with 5+ years of experience. Must have Django, PostgreSQL, and AWS experience. Strong communication skills required.",
+    "experience_level": "senior",
+    "expected_skills": ["Python", "Django", "PostgreSQL", "AWS"]
+  },
+  {
+    "id": "job_2", 
+    "title": "Frontend Developer",
+    "company": "Web Solutions",
+    "description": "Looking for a Frontend Developer with React and JavaScript expertise. 2+ years experience required. Knowledge of TypeScript and Node.js preferred.",
+    "experience_level": "mid-level",
+    "expected_skills": ["React", "JavaScript", "TypeScript", "Node.js"]
+  },
+  {
+    "id": "job_3",
+    "title": "Data Scientist",
+    "company": "Analytics Inc",
+    "description": "Data Scientist position requiring Python, machine learning, and statistical analysis skills. Experience with pandas, scikit-learn, and TensorFlow needed.",
+    "experience_level": "mid-level", 
+    "expected_skills": ["Python", "Machine Learning", "pandas", "scikit-learn", "TensorFlow"]
+  }
+]

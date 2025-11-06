@@ -110,7 +110,7 @@ class ResumeParser(ResumeParserInterface):
                 try:
                     from job_parser.semantic_matching import SemanticMatcher
                     semantic_matcher = SemanticMatcher(
-                        model_name='all-MiniLM-L6-v2',
+                        model_name='./trained_model/trained_model',
                         threshold=0.5,
                         enable_caching=True
                     )

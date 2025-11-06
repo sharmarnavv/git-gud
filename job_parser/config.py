@@ -33,7 +33,7 @@ class ParserConfig:
     max_text_length: int = field(default_factory=lambda: int(os.getenv('MAX_TEXT_LENGTH', '2000')))
     enable_ner: bool = field(default_factory=lambda: os.getenv('ENABLE_NER', 'true').lower() == 'true')
     enable_semantic: bool = field(default_factory=lambda: os.getenv('ENABLE_SEMANTIC', 'true').lower() == 'true')
-    model_name: str = field(default_factory=lambda: os.getenv('SENTENCE_BERT_MODEL', 'all-MiniLM-L6-v2'))
+    model_name: str = field(default_factory=lambda: os.getenv('SENTENCE_BERT_MODEL', './trained_model/trained_model'))
     log_level: str = field(default_factory=lambda: os.getenv('LOG_LEVEL', 'INFO'))
     confidence_weighting: Dict[str, float] = field(default_factory=lambda: {
         'semantic': float(os.getenv('SEMANTIC_WEIGHT', '0.6')),

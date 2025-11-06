@@ -34,7 +34,7 @@ class SemanticMatcher(SemanticMatcherInterface):
     """
     
     def __init__(self, 
-                 model_name: str = 'all-MiniLM-L6-v2', 
+                 model_name: str = './trained_model/trained_model', 
                  threshold: float = 0.7,
                  enable_caching: bool = True,
                  batch_size: int = 32):
@@ -71,10 +71,18 @@ class SemanticMatcher(SemanticMatcherInterface):
         )
         
         try:
-            logger.info(f"Loading Sentence-BERT model with caching: {model_name}")
+            logger.info(f"Loading Sentence-BERT model: {model_name}")
             
-            if enable_caching:
-                # Use cached model for better performance
+            # Check if it's a local path (fine-tuned model) or HuggingFace model name
+            import os
+            is_local_model = os.path.exists(model_name) and os.path.isdir(model_name)
+            
+            if is_local_model:
+                logger.info(f"Loading fine-tuned model from local path: {model_name}")
+                self.model = SentenceTransformer(model_name)
+                logger.info(f"Successfully loaded fine-tuned model: {model_name}")
+            elif enable_caching:
+                # Use cached model for better performance (for HuggingFace models)
                 self.model = get_cached_model(model_name)
                 logger.info(f"Successfully loaded cached model: {model_name}")
             else:

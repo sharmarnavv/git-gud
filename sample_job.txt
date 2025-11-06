@@ -1,0 +1,41 @@
+Senior Python Developer - AI/ML Platform
+
+We are seeking a Senior Python Developer to join our AI/ML platform team.
+
+Requirements:
+• 5+ years of professional Python development experience
+• Strong experience with Django or Flask frameworks
+• Knowledge of machine learning libraries (TensorFlow, PyTorch, scikit-learn)
+• Experience with cloud platforms, preferably AWS
+• Proficiency with Docker and containerization technologies
+• Understanding of microservices architecture and API design
+• Experience with SQL databases (PostgreSQL preferred)
+• Knowledge of CI/CD pipelines and DevOps practices
+• Strong problem-solving and analytical skills
+• Excellent communication and teamwork abilities
+
+Preferred Qualifications:
+• Master's degree in Computer Science or related field
+• Experience with Kubernetes and container orchestration
+• Knowledge of data engineering and ETL pipelines
+• Familiarity with NoSQL databases (MongoDB, Redis)
+• Experience with message queues (RabbitMQ, Kafka)
+• Background in fintech or healthcare industry
+• Open source contributions and technical leadership experience
+
+Responsibilities:
+• Design and implement scalable Python applications and APIs
+• Develop machine learning models and data processing pipelines
+• Collaborate with data scientists to productionize ML models
+• Optimize application performance and ensure high availability
+• Mentor junior developers and conduct code reviews
+• Participate in architectural decisions and technical planning
+• Ensure code quality through testing and best practices
+
+What We Offer:
+• Competitive salary: $140,000 - $180,000
+• Equity package and performance bonuses
+• Comprehensive health, dental, and vision insurance
+• Flexible work arrangements and remote options
+• Professional development budget and conference attendance
+• Cutting-edge technology stack and innovative projects

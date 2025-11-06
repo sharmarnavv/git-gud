@@ -153,3 +153,10 @@ tmp/
 
 # Kiro IDE files
 .kiro/
+
+# Resume data and archives
+archive/
+cleaned_resumes.csv
+*.csv
+
+trained_model/
