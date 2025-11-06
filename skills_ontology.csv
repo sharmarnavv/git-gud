@@ -1,0 +1,35 @@
+category,skill,description
+technical,Python,Programming language for data science and web development
+technical,JavaScript,Programming language for web development
+technical,React,JavaScript library for building user interfaces
+technical,Node.js,JavaScript runtime for server-side development
+technical,SQL,Database query language
+technical,Machine Learning,AI technique for pattern recognition
+technical,Deep Learning,Advanced ML using neural networks
+technical,TensorFlow,Open-source ML framework
+technical,PyTorch,Deep learning framework
+technical,Django,Python web framework
+technical,Flask,Lightweight Python web framework
+technical,HTML,Markup language for web pages
+technical,CSS,Styling language for web pages
+technical,Java,Object-oriented programming language
+technical,C++,Systems programming language
+soft,Communication,Ability to convey information effectively
+soft,Teamwork,Ability to work collaboratively
+soft,Problem Solving,Ability to analyze and solve complex problems
+soft,Leadership,Ability to guide and motivate teams
+soft,Time Management,Ability to prioritize and manage time effectively
+soft,Critical Thinking,Ability to analyze information objectively
+soft,Adaptability,Ability to adjust to changing circumstances
+soft,Creativity,Ability to generate innovative solutions
+tools,Git,Version control system
+tools,Docker,Containerization platform
+tools,Kubernetes,Container orchestration platform
+tools,AWS,Amazon Web Services cloud platform
+tools,Azure,Microsoft cloud platform
+tools,GCP,Google Cloud Platform
+tools,Jenkins,Continuous integration tool
+tools,Jira,Project management and issue tracking
+tools,VS Code,Code editor
+tools,IntelliJ,Integrated development environment
+tools,Postman,API testing tool

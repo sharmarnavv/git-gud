@@ -1,0 +1,1845 @@
+Category,Subcategory,Skill
+technical,programming_languages,Python
+technical,programming_languages,JavaScript
+technical,programming_languages,TypeScript
+technical,programming_languages,Java
+technical,programming_languages,C++
+technical,programming_languages,C#
+technical,programming_languages,Go
+technical,programming_languages,Rust
+technical,programming_languages,Ruby
+technical,programming_languages,PHP
+technical,programming_languages,Swift
+technical,programming_languages,Kotlin
+technical,programming_languages,R
+technical,programming_languages,MATLAB
+technical,programming_languages,Scala
+technical,programming_languages,Perl
+technical,programming_languages,Haskell
+technical,programming_languages,Clojure
+technical,programming_languages,Elixir
+technical,programming_languages,Dart
+technical,programming_languages,Lua
+technical,programming_languages,Groovy
+technical,programming_languages,VB.NET
+technical,programming_languages,F#
+technical,programming_languages,Julia
+technical,programming_languages,Objective-C
+technical,programming_languages,C
+technical,programming_languages,Assembly
+technical,programming_languages,SQL
+technical,programming_languages,PL/SQL
+technical,programming_languages,T-SQL
+technical,programming_languages,PLPGSQL
+technical,machine_learning,TensorFlow
+technical,machine_learning,PyTorch
+technical,machine_learning,Keras
+technical,machine_learning,scikit-learn
+technical,machine_learning,XGBoost
+technical,machine_learning,LightGBM
+technical,machine_learning,CatBoost
+technical,machine_learning,Hugging Face Transformers
+technical,machine_learning,NLTK
+technical,machine_learning,spaCy
+technical,machine_learning,Gensim
+technical,machine_learning,OpenAI API
+technical,machine_learning,Anthropic Claude
+technical,machine_learning,LangChain
+technical,machine_learning,LlamaIndex
+technical,machine_learning,Ray
+technical,machine_learning,Dask
+technical,machine_learning,Spark MLlib
+technical,machine_learning,H2O
+technical,machine_learning,Fast.ai
+technical,machine_learning,JAX
+technical,machine_learning,MXNet
+technical,machine_learning,Chainer
+technical,machine_learning,Theano
+technical,machine_learning,CNTK
+technical,machine_learning,PaddlePaddle
+technical,machine_learning,Caffe
+technical,machine_learning,Darknet
+technical,machine_learning,Torch
+technical,machine_learning,AutoML
+technical,machine_learning,Prophet
+technical,machine_learning,Statsmodels
+technical,machine_learning,Optuna
+technical,machine_learning,Hyperopt
+technical,machine_learning,Ray Tune
+technical,machine_learning,Weights & Biases
+technical,deep_learning,Convolutional Neural Networks (CNN)
+technical,deep_learning,Recurrent Neural Networks (RNN)
+technical,deep_learning,Long Short-Term Memory (LSTM)
+technical,deep_learning,Gated Recurrent Units (GRU)
+technical,deep_learning,Transformers
+technical,deep_learning,Vision Transformers (ViT)
+technical,deep_learning,Generative Adversarial Networks (GANs)
+technical,deep_learning,Variational Autoencoders (VAE)
+technical,deep_learning,Reinforcement Learning
+technical,deep_learning,Deep Q-Networks (DQN)
+technical,deep_learning,Policy Gradient Methods
+technical,deep_learning,Actor-Critic Methods
+technical,deep_learning,Multi-task Learning
+technical,deep_learning,Transfer Learning
+technical,deep_learning,Few-shot Learning
+technical,deep_learning,Zero-shot Learning
+technical,deep_learning,Meta-Learning
+technical,deep_learning,Attention Mechanisms
+technical,deep_learning,Self-Attention
+technical,deep_learning,Cross-Attention
+technical,deep_learning,Capsule Networks
+technical,deep_learning,Graph Neural Networks (GNN)
+technical,deep_learning,Residual Networks (ResNet)
+technical,deep_learning,Inception Networks
+technical,deep_learning,MobileNets
+technical,deep_learning,EfficientNets
+technical,deep_learning,DenseNets
+technical,deep_learning,U-Net
+technical,deep_learning,YOLO
+technical,deep_learning,Faster R-CNN
+technical,deep_learning,Mask R-CNN
+technical,natural_language_processing,Text Classification
+technical,natural_language_processing,Named Entity Recognition (NER)
+technical,natural_language_processing,Sentiment Analysis
+technical,natural_language_processing,Machine Translation
+technical,natural_language_processing,Question Answering
+technical,natural_language_processing,Text Summarization
+technical,natural_language_processing,Information Extraction
+technical,natural_language_processing,Dependency Parsing
+technical,natural_language_processing,Semantic Similarity
+technical,natural_language_processing,Word Embeddings
+technical,natural_language_processing,Word2Vec
+technical,natural_language_processing,GloVe
+technical,natural_language_processing,FastText
+technical,natural_language_processing,ELMo
+technical,natural_language_processing,BERT
+technical,natural_language_processing,RoBERTa
+technical,natural_language_processing,ELECTRA
+technical,natural_language_processing,XLNet
+technical,natural_language_processing,GPT
+technical,natural_language_processing,GPT-2
+technical,natural_language_processing,GPT-3
+technical,natural_language_processing,T5
+technical,natural_language_processing,Seq2Seq
+technical,natural_language_processing,Attention is All You Need
+technical,natural_language_processing,Tokenization
+technical,natural_language_processing,Lemmatization
+technical,natural_language_processing,Stemming
+technical,natural_language_processing,POS Tagging
+technical,natural_language_processing,Chunking
+technical,natural_language_processing,Topic Modeling
+technical,natural_language_processing,Latent Semantic Analysis (LSA)
+technical,natural_language_processing,Latent Dirichlet Allocation (LDA)
+technical,natural_language_processing,Ontology Design
+technical,natural_language_processing,Knowledge Graph Construction
+technical,natural_language_processing,Coreference Resolution
+technical,natural_language_processing,Paraphrase Detection
+technical,natural_language_processing,Semantic Role Labeling
+technical,natural_language_processing,Syntactic Parsing
+technical,natural_language_processing,Constituency Parsing
+technical,natural_language_processing,Rhetorical Structure Theory (RST)
+technical,natural_language_processing,Document Clustering
+technical,natural_language_processing,Aspect-based Sentiment Analysis
+technical,computer_vision,Image Classification
+technical,computer_vision,Object Detection
+technical,computer_vision,Instance Segmentation
+technical,computer_vision,Semantic Segmentation
+technical,computer_vision,Panoptic Segmentation
+technical,computer_vision,Pose Estimation
+technical,computer_vision,Face Detection
+technical,computer_vision,Face Recognition
+technical,computer_vision,Action Recognition
+technical,computer_vision,3D Object Detection
+technical,computer_vision,Depth Estimation
+technical,computer_vision,3D Reconstruction
+technical,computer_vision,Structure from Motion
+technical,computer_vision,Optical Flow
+technical,computer_vision,SLAM (Simultaneous Localization and Mapping)
+technical,computer_vision,Image Registration
+technical,computer_vision,Image Stitching
+technical,computer_vision,Super-resolution
+technical,computer_vision,Image Inpainting
+technical,computer_vision,Style Transfer
+technical,computer_vision,Image Enhancement
+technical,computer_vision,Video Understanding
+technical,computer_vision,Video Segmentation
+technical,computer_vision,Tracking
+technical,computer_vision,Multi-object Tracking
+technical,computer_vision,Point Cloud Processing
+technical,computer_vision,Scene Understanding
+technical,computer_vision,Visual Question Answering (VQA)
+technical,computer_vision,Image Captioning
+technical,computer_vision,Optical Character Recognition (OCR)
+technical,computer_vision,Document Understanding
+technical,computer_vision,Remote Sensing
+technical,computer_vision,Medical Image Analysis
+technical,computer_vision,Histopathology Analysis
+technical,computer_vision,X-ray Analysis
+technical,computer_vision,MRI Analysis
+technical,computer_vision,CT Scan Analysis
+technical,computer_vision,Edge Detection
+technical,computer_vision,Corner Detection
+technical,computer_vision,Feature Extraction
+technical,computer_vision,Keypoint Detection
+technical,computer_vision,Descriptor Matching
+technical,computer_vision,SIFT
+technical,computer_vision,SURF
+technical,computer_vision,ORB
+technical,computer_vision,BRIEF
+technical,computer_vision,Harris Corner Detector
+technical,computer_vision,Hough Transform
+technical,data_science,Data Analysis
+technical,data_science,Statistical Analysis
+technical,data_science,Hypothesis Testing
+technical,data_science,A/B Testing
+technical,data_science,Regression Analysis
+technical,data_science,Classification
+technical,data_science,Clustering
+technical,data_science,Dimensionality Reduction
+technical,data_science,PCA
+technical,data_science,t-SNE
+technical,data_science,UMAP
+technical,data_science,Feature Engineering
+technical,data_science,Feature Selection
+technical,data_science,Time Series Analysis
+technical,data_science,ARIMA
+technical,data_science,SARIMA
+technical,data_science,Prophet
+technical,data_science,Exponential Smoothing
+technical,data_science,Anomaly Detection
+technical,data_science,Isolation Forest
+technical,data_science,Local Outlier Factor (LOF)
+technical,data_science,One-Class SVM
+technical,data_science,Bayesian Methods
+technical,data_science,Causal Inference
+technical,data_science,Propensity Score Matching
+technical,data_science,Causal Forests
+technical,data_science,Difference-in-Differences
+technical,data_science,Instrumental Variables
+technical,data_science,Survival Analysis
+technical,data_science,Cox Proportional Hazards
+technical,data_science,Kaplan-Meier Estimator
+technical,data_science,Association Rule Mining
+technical,data_science,Apriori Algorithm
+technical,data_science,Eclat Algorithm
+technical,data_science,Recommendation Systems
+technical,data_science,Collaborative Filtering
+technical,data_science,Content-based Filtering
+technical,data_science,Hybrid Recommenders
+technical,data_science,Matrix Factorization
+technical,data_science,Missing Data Imputation
+technical,data_science,Data Cleaning
+technical,data_science,Data Wrangling
+technical,data_science,Exploratory Data Analysis (EDA)
+technical,data_science,Data Visualization
+technical,data_science,Dashboard Creation
+technical,data_science,Statistical Modeling
+technical,data_science,Bayesian Statistics
+technical,data_science,Frequentist Statistics
+technical,data_science,Bootstrapping
+technical,data_science,Cross-validation
+technical,data_science,K-fold Cross-validation
+technical,data_science,Stratified Cross-validation
+technical,data_science,Time Series Cross-validation
+technical,web_development,HTML5
+technical,web_development,CSS3
+technical,web_development,JavaScript (ES6+)
+technical,web_development,React
+technical,web_development,Vue.js
+technical,web_development,Angular
+technical,web_development,Svelte
+technical,web_development,Next.js
+technical,web_development,Nuxt.js
+technical,web_development,Node.js
+technical,web_development,Express.js
+technical,web_development,Django
+technical,web_development,Flask
+technical,web_development,FastAPI
+technical,web_development,Spring Boot
+technical,web_development,ASP.NET
+technical,web_development,Ruby on Rails
+technical,web_development,Laravel
+technical,web_development,Symfony
+technical,web_development,GraphQL
+technical,web_development,REST API Design
+technical,web_development,gRPC
+technical,web_development,WebSocket
+technical,web_development,Server-Sent Events (SSE)
+technical,web_development,Progressive Web Apps (PWA)
+technical,web_development,Single Page Applications (SPA)
+technical,web_development,Server-Side Rendering (SSR)
+technical,web_development,Static Site Generation (SSG)
+technical,web_development,JAMstack
+technical,web_development,Responsive Design
+technical,web_development,Mobile-first Design
+technical,web_development,Web Accessibility (A11y)
+technical,web_development,WCAG Compliance
+technical,web_development,SEO Optimization
+technical,web_development,Performance Optimization
+technical,web_development,Code Splitting
+technical,web_development,Lazy Loading
+technical,web_development,Caching Strategies
+technical,web_development,Content Delivery Networks (CDN)
+technical,web_development,Form Validation
+technical,web_development,Authentication
+technical,web_development,Authorization
+technical,web_development,JWT Tokens
+technical,web_development,OAuth 2.0
+technical,web_development,OpenID Connect
+technical,web_development,SAML
+technical,web_development,Session Management
+technical,web_development,CORS
+technical,web_development,Security Headers
+technical,web_development,Content Security Policy (CSP)
+technical,web_development,XSS Prevention
+technical,web_development,CSRF Prevention
+technical,web_development,SQL Injection Prevention
+technical,mobile_development,iOS Development
+technical,mobile_development,Swift
+technical,mobile_development,Objective-C
+technical,mobile_development,SwiftUI
+technical,mobile_development,UIKit
+technical,mobile_development,Android Development
+technical,mobile_development,Kotlin
+technical,mobile_development,Java (Android)
+technical,mobile_development,Jetpack Compose
+technical,mobile_development,Android Studio
+technical,mobile_development,React Native
+technical,mobile_development,Flutter
+technical,mobile_development,Dart
+technical,mobile_development,Xamarin
+technical,mobile_development,Ionic
+technical,mobile_development,Cordova
+technical,mobile_development,NativeScript
+technical,mobile_development,Progressive Web Apps (PWA)
+technical,mobile_development,Mobile App Architecture
+technical,mobile_development,Model-View-ViewModel (MVVM)
+technical,mobile_development,Model-View-Presenter (MVP)
+technical,mobile_development,Model-View-Controller (MVC)
+technical,mobile_development,Clean Architecture
+technical,mobile_development,Push Notifications
+technical,mobile_development,Local Storage
+technical,mobile_development,Realm Database
+technical,mobile_development,SQLite
+technical,mobile_development,Firebase
+technical,mobile_development,Mobile Analytics
+technical,mobile_development,Mobile Performance Optimization
+technical,mobile_development,Battery Optimization
+technical,mobile_development,Network Optimization
+technical,mobile_development,Memory Management
+technical,mobile_development,Threading
+technical,mobile_development,App Permissions
+technical,mobile_development,Sensors
+technical,mobile_development,GPS/Location Services
+technical,mobile_development,Camera Integration
+technical,mobile_development,Microphone Integration
+technical,mobile_development,Bluetooth
+technical,mobile_development,NFC
+technical,mobile_development,App Store Deployment
+technical,mobile_development,Play Store Deployment
+technical,mobile_development,App Versioning
+technical,mobile_development,A/B Testing Mobile
+technical,devops_cloud,Docker
+technical,devops_cloud,Kubernetes
+technical,devops_cloud,Container Orchestration
+technical,devops_cloud,Docker Compose
+technical,devops_cloud,Helm
+technical,devops_cloud,OpenShift
+technical,devops_cloud,CI/CD Pipelines
+technical,devops_cloud,Jenkins
+technical,devops_cloud,GitLab CI/CD
+technical,devops_cloud,GitHub Actions
+technical,devops_cloud,CircleCI
+technical,devops_cloud,Travis CI
+technical,devops_cloud,Azure Pipelines
+technical,devops_cloud,Infrastructure as Code (IaC)
+technical,devops_cloud,Terraform
+technical,devops_cloud,CloudFormation
+technical,devops_cloud,Ansible
+technical,devops_cloud,Chef
+technical,devops_cloud,Puppet
+technical,devops_cloud,SaltStack
+technical,devops_cloud,Configuration Management
+technical,devops_cloud,Monitoring and Logging
+technical,devops_cloud,Prometheus
+technical,devops_cloud,Grafana
+technical,devops_cloud,ELK Stack
+technical,devops_cloud,Splunk
+technical,devops_cloud,DataDog
+technical,devops_cloud,New Relic
+technical,devops_cloud,Application Performance Monitoring (APM)
+technical,devops_cloud,Distributed Tracing
+technical,devops_cloud,Jaeger
+technical,devops_cloud,Zipkin
+technical,devops_cloud,Log Aggregation
+technical,devops_cloud,Fluentd
+technical,devops_cloud,Logstash
+technical,devops_cloud,Graylog
+technical,devops_cloud,Service Mesh
+technical,devops_cloud,Istio
+technical,devops_cloud,Linkerd
+technical,devops_cloud,Envoy
+technical,devops_cloud,API Gateway
+technical,devops_cloud,Kong
+technical,devops_cloud,AWS API Gateway
+technical,devops_cloud,Load Balancing
+technical,devops_cloud,High Availability
+technical,devops_cloud,Disaster Recovery
+technical,devops_cloud,Backup and Recovery
+technical,devops_cloud,Version Control
+technical,devops_cloud,Git
+technical,devops_cloud,GitHub
+technical,devops_cloud,GitLab
+technical,devops_cloud,Bitbucket
+technical,devops_cloud,GitOps
+technical,devops_cloud,Security and Compliance
+technical,devops_cloud,Container Security
+technical,devops_cloud,Vulnerability Scanning
+technical,devops_cloud,Trivy
+technical,devops_cloud,Falco
+technical,devops_cloud,Network Security
+technical,devops_cloud,Firewall Configuration
+technical,devops_cloud,VPN
+technical,devops_cloud,SSL/TLS Certificates
+technical,devops_cloud,Secret Management
+technical,devops_cloud,Vault
+technical,devops_cloud,Sealed Secrets
+technical,devops_cloud,Cost Optimization
+technical,databases,Relational Databases
+technical,databases,MySQL
+technical,databases,PostgreSQL
+technical,databases,Oracle Database
+technical,databases,SQL Server
+technical,databases,MariaDB
+technical,databases,SQLite
+technical,databases,H2
+technical,databases,IBM Db2
+technical,databases,NoSQL Databases
+technical,databases,MongoDB
+technical,databases,Cassandra
+technical,databases,CouchDB
+technical,databases,Firebase Realtime Database
+technical,databases,DynamoDB
+technical,databases,Cosmos DB
+technical,databases,Key-Value Stores
+technical,databases,Redis
+technical,databases,Memcached
+technical,databases,Elasticsearch
+technical,databases,Search Engines
+technical,databases,Solr
+technical,databases,Algolia
+technical,databases,Meilisearch
+technical,databases,Vector Databases
+technical,databases,Pinecone
+technical,databases,Weaviate
+technical,databases,Milvus
+technical,databases,Qdrant
+technical,databases,Chroma
+technical,databases,FAISS
+technical,databases,Graph Databases
+technical,databases,Neo4j
+technical,databases,ArangoDB
+technical,databases,Amazon Neptune
+technical,databases,JanusGraph
+technical,databases,Time Series Databases
+technical,databases,InfluxDB
+technical,databases,Prometheus
+technical,databases,TimescaleDB
+technical,databases,QuestDB
+technical,databases,Document Databases
+technical,databases,MongoDB
+technical,databases,Firestore
+technical,databases,RethinkDB
+technical,databases,Column-family Stores
+technical,databases,HBase
+technical,databases,Cassandra
+technical,databases,Bigtable
+technical,databases,Data Warehouses
+technical,databases,Snowflake
+technical,databases,BigQuery
+technical,databases,Redshift
+technical,databases,Databricks
+technical,databases,Apache Druid
+technical,databases,Presto
+technical,databases,SQL Query Optimization
+technical,databases,Indexing
+technical,databases,Query Planning
+technical,databases,Partitioning
+technical,databases,Sharding
+technical,databases,Replication
+technical,databases,ACID Compliance
+technical,databases,Transaction Management
+technical,databases,Connection Pooling
+technical,databases,Data Modeling
+technical,databases,Normalization
+technical,databases,Denormalization
+technical,databases,Schema Design
+technical,databases,ETL Processes
+technical,databases,ELT Processes
+technical,big_data,Apache Spark
+technical,big_data,PySpark
+technical,big_data,Spark SQL
+technical,big_data,Spark Streaming
+technical,big_data,Spark MLlib
+technical,big_data,Apache Hadoop
+technical,big_data,MapReduce
+technical,big_data,HDFS
+technical,big_data,HBase
+technical,big_data,Apache Hive
+technical,big_data,Apache Pig
+technical,big_data,Apache Flink
+technical,big_data,Apache Kafka
+technical,big_data,Apache Storm
+technical,big_data,Apache NiFi
+technical,big_data,Apache Beam
+technical,big_data,Dataflow
+technical,big_data,Batch Processing
+technical,big_data,Stream Processing
+technical,big_data,Message Queues
+technical,big_data,RabbitMQ
+technical,big_data,ActiveMQ
+technical,big_data,Apache MQ
+technical,big_data,Data Lake Architecture
+technical,big_data,Data Pipeline Development
+technical,big_data,Data Integration
+technical,big_data,Apache Sqoop
+technical,big_data,Talend
+technical,big_data,Informatica
+technical,big_data,AWS Glue
+technical,big_data,Google Cloud Dataprep
+technical,big_data,dbt (Data Build Tool)
+technical,big_data,Columnar Storage
+technical,big_data,Parquet
+technical,big_data,ORC
+technical,big_data,Avro
+technical,big_data,Apache Arrow
+technical,big_data,Data Compression
+technical,big_data,Snappy
+technical,big_data,Gzip
+technical,big_data,Brotli
+technical,big_data,LZ4
+technical,software_architecture,Microservices Architecture
+technical,software_architecture,Monolithic Architecture
+technical,software_architecture,Serverless Architecture
+technical,software_architecture,Event-Driven Architecture
+technical,software_architecture,Domain-Driven Design (DDD)
+technical,software_architecture,CQRS
+technical,software_architecture,Event Sourcing
+technical,software_architecture,API-first Architecture
+technical,software_architecture,Clean Architecture
+technical,software_architecture,Hexagonal Architecture
+technical,software_architecture,SOLID Principles
+technical,software_architecture,Design Patterns
+technical,software_architecture,Creational Patterns
+technical,software_architecture,Structural Patterns
+technical,software_architecture,Behavioral Patterns
+technical,software_architecture,Enterprise Integration Patterns
+technical,software_architecture,Scalability
+technical,software_architecture,Horizontal Scaling
+technical,software_architecture,Vertical Scaling
+technical,software_architecture,Caching Strategies
+technical,software_architecture,Cache-Aside
+technical,software_architecture,Write-Through
+technical,software_architecture,Write-Behind
+technical,software_architecture,Database Sharding
+technical,software_architecture,Read Replicas
+technical,software_architecture,Load Balancing
+technical,software_architecture,Rate Limiting
+technical,software_architecture,Circuit Breaker Pattern
+technical,software_architecture,Bulkhead Pattern
+technical,software_architecture,Retry Logic
+technical,software_architecture,Timeout Management
+technical,software_architecture,Idempotency
+technical,software_architecture,Asynchronous Processing
+technical,software_architecture,Message Queues
+technical,software_architecture,Task Scheduling
+technical,software_architecture,Job Scheduling
+technical,software_architecture,Batch Processing
+technical,software_architecture,Stream Processing
+soft_skills,N/A,Communication
+soft_skills,N/A,Written Communication
+soft_skills,N/A,Verbal Communication
+soft_skills,N/A,Presentation Skills
+soft_skills,N/A,Stakeholder Management
+soft_skills,N/A,Active Listening
+soft_skills,N/A,Negotiation
+soft_skills,N/A,Leadership
+soft_skills,N/A,Team Leadership
+soft_skills,N/A,Strategic Leadership
+soft_skills,N/A,Visionary Leadership
+soft_skills,N/A,Transformational Leadership
+soft_skills,N/A,Servant Leadership
+soft_skills,N/A,Mentoring
+soft_skills,N/A,Coaching
+soft_skills,N/A,Delegation
+soft_skills,N/A,Decision Making
+soft_skills,N/A,Critical Thinking
+soft_skills,N/A,Analytical Thinking
+soft_skills,N/A,Creative Thinking
+soft_skills,N/A,Problem-Solving
+soft_skills,N/A,Root Cause Analysis
+soft_skills,N/A,Complex Problem Solving
+soft_skills,N/A,Lateral Thinking
+soft_skills,N/A,Design Thinking
+soft_skills,N/A,Teamwork
+soft_skills,N/A,Collaboration
+soft_skills,N/A,Cross-functional Collaboration
+soft_skills,N/A,Interpersonal Skills
+soft_skills,N/A,Conflict Resolution
+soft_skills,N/A,Mediation
+soft_skills,N/A,Adaptability
+soft_skills,N/A,Flexibility
+soft_skills,N/A,Change Management
+soft_skills,N/A,Resilience
+soft_skills,N/A,Stress Management
+soft_skills,N/A,Time Management
+soft_skills,N/A,Prioritization
+soft_skills,N/A,Planning
+soft_skills,N/A,Organization
+soft_skills,N/A,Attention to Detail
+soft_skills,N/A,Project Management
+soft_skills,N/A,Agile Project Management
+soft_skills,N/A,Scrum Master Skills
+soft_skills,N/A,Kanban Management
+soft_skills,N/A,Risk Management
+soft_skills,N/A,Emotional Intelligence
+soft_skills,N/A,Self-awareness
+soft_skills,N/A,Social Awareness
+soft_skills,N/A,Empathy
+soft_skills,N/A,Motivation
+soft_skills,N/A,Self-motivation
+soft_skills,N/A,Motivating Others
+soft_skills,N/A,Initiative
+soft_skills,N/A,Proactivity
+soft_skills,N/A,Accountability
+soft_skills,N/A,Ownership
+soft_skills,N/A,Ethics
+soft_skills,N/A,Integrity
+soft_skills,N/A,Honesty
+soft_skills,N/A,Reliability
+soft_skills,N/A,Trustworthiness
+soft_skills,N/A,Customer Service
+soft_skills,N/A,Customer Focus
+soft_skills,N/A,User Empathy
+soft_skills,N/A,Business Acumen
+soft_skills,N/A,Financial Literacy
+soft_skills,N/A,Industry Knowledge
+soft_skills,N/A,Market Understanding
+soft_skills,N/A,Strategic Thinking
+soft_skills,N/A,Business Strategy
+soft_skills,N/A,Product Strategy
+soft_skills,N/A,Innovation
+soft_skills,N/A,Entrepreneurial Mindset
+soft_skills,N/A,Quality Consciousness
+soft_skills,N/A,Continuous Improvement
+soft_skills,N/A,Learning Agility
+soft_skills,N/A,Quick Learning
+soft_skills,N/A,Knowledge Transfer
+soft_skills,N/A,Documentation Skills
+soft_skills,N/A,Technical Writing
+soft_skills,N/A,Research Skills
+soft_skills,N/A,Information Synthesis
+soft_skills,N/A,Public Speaking
+soft_skills,N/A,Storytelling
+soft_skills,N/A,Narrative Building
+soft_skills,N/A,Data Presentation
+soft_skills,N/A,Simplification of Complex Concepts
+soft_skills,N/A,Feedback Provision
+soft_skills,N/A,Receiving Feedback
+soft_skills,N/A,Self-Reflection
+soft_skills,N/A,Metacognition
+soft_skills,N/A,Growth Mindset
+soft_skills,N/A,Curiosity
+soft_skills,N/A,Cultural Sensitivity
+soft_skills,N/A,Diversity and Inclusion
+soft_skills,N/A,Global Perspective
+soft_skills,N/A,Cross-cultural Communication
+soft_skills,N/A,Language Skills
+tools_platforms,aws,EC2
+tools_platforms,aws,S3
+tools_platforms,aws,Lambda
+tools_platforms,aws,RDS
+tools_platforms,aws,DynamoDB
+tools_platforms,aws,ElastiCache
+tools_platforms,aws,RedShift
+tools_platforms,aws,Glue
+tools_platforms,aws,EMR
+tools_platforms,aws,SageMaker
+tools_platforms,aws,CloudFormation
+tools_platforms,aws,CloudWatch
+tools_platforms,aws,CloudTrail
+tools_platforms,aws,IAM
+tools_platforms,aws,VPC
+tools_platforms,aws,API Gateway
+tools_platforms,aws,SNS
+tools_platforms,aws,SQS
+tools_platforms,aws,Step Functions
+tools_platforms,aws,ECS
+tools_platforms,aws,EKS
+tools_platforms,aws,Fargate
+tools_platforms,aws,AppSync
+tools_platforms,aws,Cognito
+tools_platforms,aws,Kinesis
+tools_platforms,aws,QuickSight
+tools_platforms,aws,Athena
+tools_platforms,aws,Lake Formation
+tools_platforms,aws,DataSync
+tools_platforms,aws,Database Migration Service (DMS)
+tools_platforms,aws,Transfer Family
+tools_platforms,aws,Elastic Beanstalk
+tools_platforms,aws,CloudFront
+tools_platforms,aws,Route 53
+tools_platforms,aws,Certificate Manager
+tools_platforms,aws,Secrets Manager
+tools_platforms,aws,Systems Manager
+tools_platforms,aws,CodePipeline
+tools_platforms,aws,CodeBuild
+tools_platforms,aws,CodeDeploy
+tools_platforms,aws,CodeCommit
+tools_platforms,gcp,Compute Engine
+tools_platforms,gcp,App Engine
+tools_platforms,gcp,Cloud Run
+tools_platforms,gcp,Cloud Functions
+tools_platforms,gcp,Cloud Storage
+tools_platforms,gcp,Cloud SQL
+tools_platforms,gcp,Cloud Datastore
+tools_platforms,gcp,Cloud Firestore
+tools_platforms,gcp,Bigtable
+tools_platforms,gcp,BigQuery
+tools_platforms,gcp,Dataflow
+tools_platforms,gcp,Dataproc
+tools_platforms,gcp,Cloud Pub/Sub
+tools_platforms,gcp,Cloud Tasks
+tools_platforms,gcp,Cloud Scheduler
+tools_platforms,gcp,Cloud Vision
+tools_platforms,gcp,Cloud Natural Language
+tools_platforms,gcp,Cloud Speech-to-Text
+tools_platforms,gcp,Cloud Text-to-Speech
+tools_platforms,gcp,Cloud Translation
+tools_platforms,gcp,Cloud AI Platform
+tools_platforms,gcp,Vertex AI
+tools_platforms,gcp,TensorFlow Enterprise
+tools_platforms,gcp,Dialogflow
+tools_platforms,gcp,Cloud Armor
+tools_platforms,gcp,Cloud VPN
+tools_platforms,gcp,Cloud CDN
+tools_platforms,gcp,Cloud Load Balancing
+tools_platforms,gcp,Cloud Monitoring
+tools_platforms,gcp,Cloud Logging
+tools_platforms,gcp,Cloud Trace
+tools_platforms,gcp,Cloud Profiler
+tools_platforms,gcp,Cloud Debugger
+tools_platforms,gcp,Identity and Access Management (IAM)
+tools_platforms,gcp,Cloud KMS
+tools_platforms,gcp,Cloud IAP
+tools_platforms,gcp,Cloud Interconnect
+tools_platforms,gcp,Cloud Anthos
+tools_platforms,gcp,Google Kubernetes Engine (GKE)
+tools_platforms,gcp,Cloud Build
+tools_platforms,gcp,Cloud Source Repositories
+tools_platforms,gcp,Cloud Deployment Manager
+tools_platforms,azure,Virtual Machines
+tools_platforms,azure,App Service
+tools_platforms,azure,Azure Functions
+tools_platforms,azure,Container Instances
+tools_platforms,azure,Kubernetes Service (AKS)
+tools_platforms,azure,Blob Storage
+tools_platforms,azure,File Storage
+tools_platforms,azure,Table Storage
+tools_platforms,azure,Queue Storage
+tools_platforms,azure,SQL Database
+tools_platforms,azure,Cosmos DB
+tools_platforms,azure,Cache for Redis
+tools_platforms,azure,Data Lake Storage
+tools_platforms,azure,Synapse Analytics
+tools_platforms,azure,Azure HDInsight
+tools_platforms,azure,Databricks
+tools_platforms,azure,Machine Learning
+tools_platforms,azure,Cognitive Services
+tools_platforms,azure,Computer Vision
+tools_platforms,azure,Face API
+tools_platforms,azure,Text Analytics
+tools_platforms,azure,Speech Service
+tools_platforms,azure,Translator
+tools_platforms,azure,LUIS
+tools_platforms,azure,QnA Maker
+tools_platforms,azure,Bot Service
+tools_platforms,azure,Search
+tools_platforms,azure,Content Delivery Network (CDN)
+tools_platforms,azure,Azure Front Door
+tools_platforms,azure,Application Gateway
+tools_platforms,azure,Load Balancer
+tools_platforms,azure,Traffic Manager
+tools_platforms,azure,Virtual Network
+tools_platforms,azure,VPN Gateway
+tools_platforms,azure,ExpressRoute
+tools_platforms,azure,Azure Firewall
+tools_platforms,azure,DDoS Protection
+tools_platforms,azure,Network Watcher
+tools_platforms,azure,Azure Monitor
+tools_platforms,azure,Application Insights
+tools_platforms,azure,Log Analytics
+tools_platforms,azure,Azure DevOps
+tools_platforms,azure,Repos
+tools_platforms,azure,Pipelines
+tools_platforms,azure,Test Plans
+tools_platforms,azure,Artifacts
+tools_platforms,azure,Key Vault
+tools_platforms,azure,Managed Identity
+tools_platforms,azure,Blueprint
+tools_platforms,azure,Policy
+tools_platforms,azure,Cost Management
+tools_platforms,monitoring_logging,Prometheus
+tools_platforms,monitoring_logging,Grafana
+tools_platforms,monitoring_logging,"ELK Stack (Elasticsearch, Logstash, Kibana)"
+tools_platforms,monitoring_logging,Splunk
+tools_platforms,monitoring_logging,DataDog
+tools_platforms,monitoring_logging,New Relic
+tools_platforms,monitoring_logging,Dynatrace
+tools_platforms,monitoring_logging,AppDynamics
+tools_platforms,monitoring_logging,Elastic APM
+tools_platforms,monitoring_logging,Jaeger
+tools_platforms,monitoring_logging,Zipkin
+tools_platforms,monitoring_logging,SigNoz
+tools_platforms,monitoring_logging,Loki
+tools_platforms,monitoring_logging,Tempo
+tools_platforms,monitoring_logging,Fluentd
+tools_platforms,monitoring_logging,Logstash
+tools_platforms,monitoring_logging,Beats
+tools_platforms,monitoring_logging,Vector
+tools_platforms,monitoring_logging,Telegraf
+tools_platforms,monitoring_logging,Collectd
+tools_platforms,monitoring_logging,node_exporter
+tools_platforms,monitoring_logging,kube-state-metrics
+tools_platforms,monitoring_logging,Alertmanager
+tools_platforms,monitoring_logging,VictorOps
+tools_platforms,monitoring_logging,PagerDuty
+tools_platforms,monitoring_logging,Opsgenie
+tools_platforms,monitoring_logging,Statuspage
+tools_platforms,monitoring_logging,Runbook Automation
+tools_platforms,data_tools,Jupyter Notebook
+tools_platforms,data_tools,JupyterLab
+tools_platforms,data_tools,Google Colab
+tools_platforms,data_tools,Kaggle Notebooks
+tools_platforms,data_tools,VSCode
+tools_platforms,data_tools,PyCharm
+tools_platforms,data_tools,IntelliJ IDEA
+tools_platforms,data_tools,DataGrip
+tools_platforms,data_tools,Tableau
+tools_platforms,data_tools,Power BI
+tools_platforms,data_tools,Looker
+tools_platforms,data_tools,Metabase
+tools_platforms,data_tools,Apache Superset
+tools_platforms,data_tools,Redash
+tools_platforms,data_tools,Mode Analytics
+tools_platforms,data_tools,Qlik Sense
+tools_platforms,data_tools,Microstrategy
+tools_platforms,data_tools,Alteryx
+tools_platforms,data_tools,RapidMiner
+tools_platforms,data_tools,KNIME
+tools_platforms,data_tools,Orange
+tools_platforms,data_tools,Pandas
+tools_platforms,data_tools,NumPy
+tools_platforms,data_tools,SciPy
+tools_platforms,data_tools,Matplotlib
+tools_platforms,data_tools,Seaborn
+tools_platforms,data_tools,Plotly
+tools_platforms,data_tools,Bokeh
+tools_platforms,data_tools,Altair
+tools_platforms,data_tools,Ggplot2
+tools_platforms,data_tools,Shiny
+tools_platforms,data_tools,Streamlit
+tools_platforms,data_tools,Dash
+tools_platforms,data_tools,Voila
+tools_platforms,data_tools,Observable
+tools_platforms,data_tools,Excel
+tools_platforms,data_tools,Google Sheets
+tools_platforms,data_tools,LibreOffice Calc
+tools_platforms,data_tools,Apache OpenOffice
+tools_platforms,collaboration,Slack
+tools_platforms,collaboration,Microsoft Teams
+tools_platforms,collaboration,Discord
+tools_platforms,collaboration,Zoom
+tools_platforms,collaboration,Google Meet
+tools_platforms,collaboration,Jitsi
+tools_platforms,collaboration,Asana
+tools_platforms,collaboration,Jira
+tools_platforms,collaboration,Trello
+tools_platforms,collaboration,Monday.com
+tools_platforms,collaboration,Notion
+tools_platforms,collaboration,Confluence
+tools_platforms,collaboration,SharePoint
+tools_platforms,collaboration,OneDrive
+tools_platforms,collaboration,Google Drive
+tools_platforms,collaboration,Dropbox
+tools_platforms,collaboration,Box
+tools_platforms,collaboration,Miro
+tools_platforms,collaboration,Figma
+tools_platforms,collaboration,Mural
+tools_platforms,collaboration,InVision
+tools_platforms,collaboration,Lucidchart
+tools_platforms,collaboration,Draw.io
+tools_platforms,collaboration,Excalidraw
+tools_platforms,collaboration,GitHub
+tools_platforms,collaboration,GitLab
+tools_platforms,collaboration,Bitbucket
+tools_platforms,collaboration,Gitea
+tools_platforms,collaboration,Gitee
+tools_platforms,documentation,Sphinx
+tools_platforms,documentation,MkDocs
+tools_platforms,documentation,Docusaurus
+tools_platforms,documentation,Jekyll
+tools_platforms,documentation,Hugo
+tools_platforms,documentation,GitBook
+tools_platforms,documentation,Confluence
+tools_platforms,documentation,Notion
+tools_platforms,documentation,Readme.io
+tools_platforms,documentation,Swagger/OpenAPI
+tools_platforms,documentation,Postman
+tools_platforms,documentation,Insomnia
+tools_platforms,documentation,Paw
+tools_platforms,documentation,RapidAPI
+tools_platforms,documentation,Stoplight
+tools_platforms,documentation,Swagger UI
+tools_platforms,documentation,ReDoc
+tools_platforms,documentation,API Blueprint
+tools_platforms,documentation,RAML
+tools_platforms,documentation,Apiary
+frameworks_libraries,web_frameworks,Django
+frameworks_libraries,web_frameworks,Flask
+frameworks_libraries,web_frameworks,FastAPI
+frameworks_libraries,web_frameworks,Tornado
+frameworks_libraries,web_frameworks,Bottle
+frameworks_libraries,web_frameworks,CherryPy
+frameworks_libraries,web_frameworks,TurboGears
+frameworks_libraries,web_frameworks,web2py
+frameworks_libraries,web_frameworks,Pyramid
+frameworks_libraries,web_frameworks,Zope
+frameworks_libraries,web_frameworks,Express.js
+frameworks_libraries,web_frameworks,Fastify
+frameworks_libraries,web_frameworks,Hapi
+frameworks_libraries,web_frameworks,Koa
+frameworks_libraries,web_frameworks,Polka
+frameworks_libraries,web_frameworks,Restify
+frameworks_libraries,web_frameworks,Loopback
+frameworks_libraries,web_frameworks,Feathers
+frameworks_libraries,web_frameworks,Spring Boot
+frameworks_libraries,web_frameworks,Spring Framework
+frameworks_libraries,web_frameworks,Hibernate
+frameworks_libraries,web_frameworks,JPA
+frameworks_libraries,web_frameworks,Grails
+frameworks_libraries,web_frameworks,Play Framework
+frameworks_libraries,web_frameworks,Akka
+frameworks_libraries,web_frameworks,Vert.x
+frameworks_libraries,web_frameworks,Quarkus
+frameworks_libraries,web_frameworks,Micronaut
+frameworks_libraries,web_frameworks,Ruby on Rails
+frameworks_libraries,web_frameworks,Sinatra
+frameworks_libraries,web_frameworks,Hanami
+frameworks_libraries,web_frameworks,Trailblazer
+frameworks_libraries,web_frameworks,Laravel
+frameworks_libraries,web_frameworks,Symfony
+frameworks_libraries,web_frameworks,Slim
+frameworks_libraries,web_frameworks,Zend Framework
+frameworks_libraries,web_frameworks,Yii
+frameworks_libraries,web_frameworks,CodeIgniter
+frameworks_libraries,web_frameworks,Cake PHP
+frameworks_libraries,web_frameworks,Phalcon
+frameworks_libraries,web_frameworks,ASP.NET Core
+frameworks_libraries,web_frameworks,ASP.NET Framework
+frameworks_libraries,web_frameworks,Nancy
+frameworks_libraries,web_frameworks,ServiceStack
+frameworks_libraries,web_frameworks,Orchard
+frameworks_libraries,web_frameworks,umbraco
+frameworks_libraries,web_frameworks,Go (net/http)
+frameworks_libraries,web_frameworks,Gin
+frameworks_libraries,web_frameworks,Echo
+frameworks_libraries,web_frameworks,Fiber
+frameworks_libraries,web_frameworks,Chi
+frameworks_libraries,web_frameworks,Beego
+frameworks_libraries,web_frameworks,Buffalo
+frameworks_libraries,web_frameworks,GORM
+frameworks_libraries,web_frameworks,Rust (Actix)
+frameworks_libraries,web_frameworks,Rocket
+frameworks_libraries,web_frameworks,Axum
+frameworks_libraries,web_frameworks,Warp
+frameworks_libraries,web_frameworks,Yew
+frameworks_libraries,web_frameworks,Swift (Vapor)
+frameworks_libraries,web_frameworks,Kitura
+frameworks_libraries,web_frameworks,Perfect
+frameworks_libraries,web_frameworks,Kotlin (Ktor)
+frameworks_libraries,web_frameworks,Grizzly
+frameworks_libraries,frontend_frameworks,React
+frameworks_libraries,frontend_frameworks,React Native
+frameworks_libraries,frontend_frameworks,React Query
+frameworks_libraries,frontend_frameworks,React Router
+frameworks_libraries,frontend_frameworks,Redux
+frameworks_libraries,frontend_frameworks,Redux Toolkit
+frameworks_libraries,frontend_frameworks,MobX
+frameworks_libraries,frontend_frameworks,Zustand
+frameworks_libraries,frontend_frameworks,Recoil
+frameworks_libraries,frontend_frameworks,Jotai
+frameworks_libraries,frontend_frameworks,Vue.js
+frameworks_libraries,frontend_frameworks,Vue Router
+frameworks_libraries,frontend_frameworks,Vuex
+frameworks_libraries,frontend_frameworks,Pinia
+frameworks_libraries,frontend_frameworks,Vue Query
+frameworks_libraries,frontend_frameworks,Angular
+frameworks_libraries,frontend_frameworks,AngularJS
+frameworks_libraries,frontend_frameworks,Angular Material
+frameworks_libraries,frontend_frameworks,ng-bootstrap
+frameworks_libraries,frontend_frameworks,Svelte
+frameworks_libraries,frontend_frameworks,SvelteKit
+frameworks_libraries,frontend_frameworks,Next.js
+frameworks_libraries,frontend_frameworks,Nuxt.js
+frameworks_libraries,frontend_frameworks,Gatsby
+frameworks_libraries,frontend_frameworks,Remix
+frameworks_libraries,frontend_frameworks,SolidJS
+frameworks_libraries,frontend_frameworks,Qwik
+frameworks_libraries,frontend_frameworks,Astro
+frameworks_libraries,frontend_frameworks,Lit
+frameworks_libraries,frontend_frameworks,Alpine.js
+frameworks_libraries,frontend_frameworks,htmx
+frameworks_libraries,frontend_frameworks,Stimulus
+frameworks_libraries,frontend_frameworks,Hotwire
+frameworks_libraries,frontend_frameworks,Turbo
+frameworks_libraries,frontend_frameworks,Web Components
+frameworks_libraries,frontend_frameworks,Polymer
+frameworks_libraries,frontend_frameworks,Stencil
+frameworks_libraries,frontend_frameworks,Material Web
+frameworks_libraries,ui_component_libraries,Material-UI
+frameworks_libraries,ui_component_libraries,Chakra UI
+frameworks_libraries,ui_component_libraries,Tailwind CSS
+frameworks_libraries,ui_component_libraries,Bootstrap
+frameworks_libraries,ui_component_libraries,Foundation
+frameworks_libraries,ui_component_libraries,Bulma
+frameworks_libraries,ui_component_libraries,Ant Design
+frameworks_libraries,ui_component_libraries,Semantic UI
+frameworks_libraries,ui_component_libraries,UIKit
+frameworks_libraries,ui_component_libraries,Materialize
+frameworks_libraries,ui_component_libraries,Vuetify
+frameworks_libraries,ui_component_libraries,Element UI
+frameworks_libraries,ui_component_libraries,Quasar
+frameworks_libraries,ui_component_libraries,Vuetify
+frameworks_libraries,ui_component_libraries,Angular Material
+frameworks_libraries,ui_component_libraries,ng-bootstrap
+frameworks_libraries,ui_component_libraries,Prime NG
+frameworks_libraries,ui_component_libraries,Ant Design Vue
+frameworks_libraries,ui_component_libraries,Storybook
+frameworks_libraries,ui_component_libraries,styled-components
+frameworks_libraries,ui_component_libraries,Emotion
+frameworks_libraries,ui_component_libraries,CSS Modules
+frameworks_libraries,ui_component_libraries,SASS/SCSS
+frameworks_libraries,ui_component_libraries,LESS
+frameworks_libraries,ui_component_libraries,PostCSS
+frameworks_libraries,ui_component_libraries,Autoprefixer
+frameworks_libraries,ui_component_libraries,Lightning Design System
+frameworks_libraries,ui_component_libraries,Salesforce UI
+frameworks_libraries,ui_component_libraries,IBM Carbon
+frameworks_libraries,ui_component_libraries,Shopify Polaris
+frameworks_libraries,ui_component_libraries,Atlassian UI
+frameworks_libraries,ui_component_libraries,Stripe UI
+frameworks_libraries,ui_component_libraries,GitHub UI
+frameworks_libraries,ui_component_libraries,Netflix UI
+frameworks_libraries,testing_frameworks,Jest
+frameworks_libraries,testing_frameworks,Mocha
+frameworks_libraries,testing_frameworks,Chai
+frameworks_libraries,testing_frameworks,Jasmine
+frameworks_libraries,testing_frameworks,Karma
+frameworks_libraries,testing_frameworks,Cypress
+frameworks_libraries,testing_frameworks,Playwright
+frameworks_libraries,testing_frameworks,Puppeteer
+frameworks_libraries,testing_frameworks,TestCafe
+frameworks_libraries,testing_frameworks,Selenium
+frameworks_libraries,testing_frameworks,WebdriverIO
+frameworks_libraries,testing_frameworks,Nightwatch
+frameworks_libraries,testing_frameworks,Protractor
+frameworks_libraries,testing_frameworks,Appium
+frameworks_libraries,testing_frameworks,XCTest
+frameworks_libraries,testing_frameworks,EarlGrey
+frameworks_libraries,testing_frameworks,Detox
+frameworks_libraries,testing_frameworks,Espresso
+frameworks_libraries,testing_frameworks,UI Automator
+frameworks_libraries,testing_frameworks,Pytest
+frameworks_libraries,testing_frameworks,Unittest
+frameworks_libraries,testing_frameworks,Nose
+frameworks_libraries,testing_frameworks,Nose2
+frameworks_libraries,testing_frameworks,Hypothesis
+frameworks_libraries,testing_frameworks,Tox
+frameworks_libraries,testing_frameworks,Behave
+frameworks_libraries,testing_frameworks,Robot Framework
+frameworks_libraries,testing_frameworks,Lettuce
+frameworks_libraries,testing_frameworks,Rad
+frameworks_libraries,testing_frameworks,Unittest Mock
+frameworks_libraries,testing_frameworks,Mockito
+frameworks_libraries,testing_frameworks,PowerMock
+frameworks_libraries,testing_frameworks,JUnit
+frameworks_libraries,testing_frameworks,TestNG
+frameworks_libraries,testing_frameworks,Spock
+frameworks_libraries,testing_frameworks,Groovy testing
+frameworks_libraries,testing_frameworks,RSpec
+frameworks_libraries,testing_frameworks,Minitest
+frameworks_libraries,testing_frameworks,Test::Unit
+frameworks_libraries,testing_frameworks,Cucumber
+frameworks_libraries,testing_frameworks,Capybara
+frameworks_libraries,testing_frameworks,Rspec-rails
+frameworks_libraries,testing_frameworks,PHPUnit
+frameworks_libraries,testing_frameworks,Codeception
+frameworks_libraries,testing_frameworks,Behat
+frameworks_libraries,testing_frameworks,Phpspec
+frameworks_libraries,testing_frameworks,Go testing
+frameworks_libraries,testing_frameworks,Testify
+frameworks_libraries,testing_frameworks,Ginkgo
+frameworks_libraries,testing_frameworks,GoConvey
+frameworks_libraries,testing_frameworks,Rust testing
+frameworks_libraries,testing_frameworks,.NET testing
+frameworks_libraries,testing_frameworks,xUnit
+frameworks_libraries,testing_frameworks,NSubstitute
+frameworks_libraries,testing_frameworks,Moq
+frameworks_libraries,testing_frameworks,FakeItEasy
+frameworks_libraries,orm_odm,SQLAlchemy
+frameworks_libraries,orm_odm,Django ORM
+frameworks_libraries,orm_odm,Peewee
+frameworks_libraries,orm_odm,Tortoise ORM
+frameworks_libraries,orm_odm,Pony ORM
+frameworks_libraries,orm_odm,Sqlalchemy-utils
+frameworks_libraries,orm_odm,Prisma
+frameworks_libraries,orm_odm,TypeORM
+frameworks_libraries,orm_odm,Sequelize
+frameworks_libraries,orm_odm,Bookshelf
+frameworks_libraries,orm_odm,Knex.js
+frameworks_libraries,orm_odm,Mongoose
+frameworks_libraries,orm_odm,MongoDB Node Driver
+frameworks_libraries,orm_odm,Waterline
+frameworks_libraries,orm_odm,Hibernate
+frameworks_libraries,orm_odm,JPA
+frameworks_libraries,orm_odm,EclipseLink
+frameworks_libraries,orm_odm,OpenJPA
+frameworks_libraries,orm_odm,TopLink
+frameworks_libraries,orm_odm,MyBatis
+frameworks_libraries,orm_odm,ActiveRecord
+frameworks_libraries,orm_odm,DataMapper
+frameworks_libraries,orm_odm,ROM
+frameworks_libraries,orm_odm,Sequel
+frameworks_libraries,orm_odm,Hanami
+frameworks_libraries,orm_odm,Doctrine
+frameworks_libraries,orm_odm,Propel
+frameworks_libraries,orm_odm,RedBean
+frameworks_libraries,orm_odm,GORM
+frameworks_libraries,orm_odm,sqlc
+frameworks_libraries,orm_odm,sqlx
+frameworks_libraries,orm_odm,Diesel
+frameworks_libraries,orm_odm,Quill
+frameworks_libraries,orm_odm,SQLx
+frameworks_libraries,orm_odm,Entity Framework
+frameworks_libraries,orm_odm,Dapper
+frameworks_libraries,orm_odm,NHibernate
+frameworks_libraries,orm_odm,LLBLGen
+specialized_domains,fintech,Stock Market Analysis
+specialized_domains,fintech,Algorithmic Trading
+specialized_domains,fintech,Risk Management
+specialized_domains,fintech,Portfolio Optimization
+specialized_domains,fintech,Quantitative Analysis
+specialized_domains,fintech,Financial Modeling
+specialized_domains,fintech,Valuation Models
+specialized_domains,fintech,DCF Analysis
+specialized_domains,fintech,Black-Scholes Model
+specialized_domains,fintech,Value at Risk (VaR)
+specialized_domains,fintech,Expected Shortfall
+specialized_domains,fintech,CAPM
+specialized_domains,fintech,Fama-French Model
+specialized_domains,fintech,Time Series Forecasting
+specialized_domains,fintech,Credit Analysis
+specialized_domains,fintech,Bond Pricing
+specialized_domains,fintech,Fixed Income Analysis
+specialized_domains,fintech,Derivatives Pricing
+specialized_domains,fintech,Options Pricing
+specialized_domains,fintech,Interest Rate Modeling
+specialized_domains,fintech,Market Microstructure
+specialized_domains,fintech,High-Frequency Trading
+specialized_domains,fintech,Low-Latency Systems
+specialized_domains,fintech,Blockchain Technology
+specialized_domains,fintech,Cryptocurrency Analysis
+specialized_domains,fintech,Smart Contracts
+specialized_domains,fintech,DeFi Protocols
+specialized_domains,fintech,Payment Systems
+specialized_domains,fintech,Compliance
+specialized_domains,fintech,Anti-Money Laundering (AML)
+specialized_domains,fintech,Know Your Customer (KYC)
+specialized_domains,fintech,Regulatory Reporting
+specialized_domains,fintech,Basel III
+specialized_domains,fintech,Dodd-Frank
+specialized_domains,fintech,MiFID II
+specialized_domains,fintech,GDPR for Finance
+specialized_domains,fintech,Financial APIs
+specialized_domains,fintech,Bloomberg Terminal
+specialized_domains,fintech,Reuters
+specialized_domains,fintech,FactSet
+specialized_domains,fintech,Yahoo Finance API
+specialized_domains,fintech,Alpha Vantage
+specialized_domains,fintech,Quandl
+specialized_domains,fintech,IEX Cloud
+specialized_domains,healthcare,HIPAA Compliance
+specialized_domains,healthcare,DICOM
+specialized_domains,healthcare,HL7
+specialized_domains,healthcare,FHIR
+specialized_domains,healthcare,Electronic Health Records (EHR)
+specialized_domains,healthcare,Clinical Data Management
+specialized_domains,healthcare,Medical Image Processing
+specialized_domains,healthcare,Pathology Image Analysis
+specialized_domains,healthcare,Genomics Data Analysis
+specialized_domains,healthcare,Bioinformatics
+specialized_domains,healthcare,Drug Discovery
+specialized_domains,healthcare,Clinical Trial Management
+specialized_domains,healthcare,Pharmacovigilance
+specialized_domains,healthcare,Medical Ontologies
+specialized_domains,healthcare,SNOMED CT
+specialized_domains,healthcare,ICD-10
+specialized_domains,healthcare,CPT Codes
+specialized_domains,healthcare,Adverse Event Reporting
+specialized_domains,healthcare,Precision Medicine
+specialized_domains,healthcare,Patient Risk Stratification
+specialized_domains,healthcare,Predictive Healthcare
+specialized_domains,healthcare,Telemedicine Platforms
+specialized_domains,healthcare,Medical Device Integration
+specialized_domains,healthcare,Biomedical Signal Processing
+specialized_domains,healthcare,ECG Analysis
+specialized_domains,healthcare,EEG Analysis
+specialized_domains,healthcare,EMG Analysis
+specialized_domains,healthcare,Sleep Study Analysis
+specialized_domains,healthcare,Medical Literature Mining
+specialized_domains,healthcare,Drug-Drug Interaction Analysis
+specialized_domains,healthcare,Healthcare Analytics
+specialized_domains,healthcare,Hospital Management Systems
+specialized_domains,healthcare,Patient Scheduling
+specialized_domains,healthcare,Billing and Revenue Cycle
+specialized_domains,healthcare,Healthcare Interoperability
+specialized_domains,ecommerce,Product Recommendations
+specialized_domains,ecommerce,Collaborative Filtering
+specialized_domains,ecommerce,Content-based Filtering
+specialized_domains,ecommerce,Hybrid Recommendations
+specialized_domains,ecommerce,Personalization
+specialized_domains,ecommerce,User Behavior Analysis
+specialized_domains,ecommerce,Session Analysis
+specialized_domains,ecommerce,Cohort Analysis
+specialized_domains,ecommerce,Customer Segmentation
+specialized_domains,ecommerce,RFM Analysis
+specialized_domains,ecommerce,Customer Lifetime Value (CLV)
+specialized_domains,ecommerce,Churn Prediction
+specialized_domains,ecommerce,Price Optimization
+specialized_domains,ecommerce,Dynamic Pricing
+specialized_domains,ecommerce,Demand Forecasting
+specialized_domains,ecommerce,Inventory Management
+specialized_domains,ecommerce,Supply Chain Optimization
+specialized_domains,ecommerce,Fraud Detection
+specialized_domains,ecommerce,Payment Processing
+specialized_domains,ecommerce,Shopping Cart Optimization
+specialized_domains,ecommerce,Checkout Conversion
+specialized_domains,ecommerce,Product Search
+specialized_domains,ecommerce,Autocomplete
+specialized_domains,ecommerce,Faceted Search
+specialized_domains,ecommerce,Visual Search
+specialized_domains,ecommerce,Similar Product Finding
+specialized_domains,ecommerce,Review Analysis
+specialized_domains,ecommerce,Sentiment Analysis
+specialized_domains,ecommerce,Product Catalog Management
+specialized_domains,ecommerce,Multi-channel Commerce
+specialized_domains,ecommerce,Marketplace Integration
+specialized_domains,ecommerce,Subscription Management
+specialized_domains,ecommerce,Loyalty Programs
+specialized_domains,ecommerce,Email Marketing Automation
+specialized_domains,ecommerce,Push Notifications
+specialized_domains,ecommerce,Customer Support Chatbots
+specialized_domains,ecommerce,A/B Testing
+specialized_domains,ecommerce,Conversion Rate Optimization (CRO)
+specialized_domains,ecommerce,Attribution Modeling
+specialized_domains,marketing_analytics,Customer Journey Mapping
+specialized_domains,marketing_analytics,Touch Point Analysis
+specialized_domains,marketing_analytics,Marketing Attribution
+specialized_domains,marketing_analytics,Multi-touch Attribution
+specialized_domains,marketing_analytics,First-click Attribution
+specialized_domains,marketing_analytics,Last-click Attribution
+specialized_domains,marketing_analytics,Linear Attribution
+specialized_domains,marketing_analytics,Time-Decay Attribution
+specialized_domains,marketing_analytics,Campaign Analysis
+specialized_domains,marketing_analytics,ROI Analysis
+specialized_domains,marketing_analytics,ROAS (Return on Ad Spend)
+specialized_domains,marketing_analytics,Marketing Mix Modeling
+specialized_domains,marketing_analytics,Incrementality Testing
+specialized_domains,marketing_analytics,Causal Inference in Marketing
+specialized_domains,marketing_analytics,Customer Acquisition Cost (CAC)
+specialized_domains,marketing_analytics,Marketing Qualified Leads (MQL)
+specialized_domains,marketing_analytics,Sales Qualified Leads (SQL)
+specialized_domains,marketing_analytics,Lead Scoring
+specialized_domains,marketing_analytics,Email Analytics
+specialized_domains,marketing_analytics,Open Rates
+specialized_domains,marketing_analytics,Click Rates
+specialized_domains,marketing_analytics,Conversion Rates
+specialized_domains,marketing_analytics,Social Media Analytics
+specialized_domains,marketing_analytics,Sentiment Analysis
+specialized_domains,marketing_analytics,Engagement Metrics
+specialized_domains,marketing_analytics,Influencer Analysis
+specialized_domains,marketing_analytics,Competitive Analysis
+specialized_domains,marketing_analytics,Brand Health Tracking
+specialized_domains,marketing_analytics,Ad Performance Analysis
+specialized_domains,marketing_analytics,Programmatic Advertising
+specialized_domains,marketing_analytics,Audience Segmentation
+specialized_domains,marketing_analytics,Behavioral Targeting
+specialized_domains,marketing_analytics,Lookalike Audiences
+specialized_domains,marketing_analytics,Market Basket Analysis
+specialized_domains,marketing_analytics,Cross-sell/Upsell Analysis
+specialized_domains,marketing_analytics,Promotional Effectiveness
+specialized_domains,marketing_analytics,Web Analytics
+specialized_domains,marketing_analytics,Google Analytics
+specialized_domains,marketing_analytics,Mixpanel
+specialized_domains,marketing_analytics,Amplitude
+specialized_domains,computer_networks,Network Protocol Design
+specialized_domains,computer_networks,TCP/IP
+specialized_domains,computer_networks,UDP
+specialized_domains,computer_networks,HTTP/HTTPS
+specialized_domains,computer_networks,DNS
+specialized_domains,computer_networks,DHCP
+specialized_domains,computer_networks,BGP
+specialized_domains,computer_networks,OSPF
+specialized_domains,computer_networks,EIGRP
+specialized_domains,computer_networks,VPN
+specialized_domains,computer_networks,IPSec
+specialized_domains,computer_networks,SSL/TLS
+specialized_domains,computer_networks,QUIC
+specialized_domains,computer_networks,Network Security
+specialized_domains,computer_networks,Firewalls
+specialized_domains,computer_networks,Intrusion Detection Systems (IDS)
+specialized_domains,computer_networks,Intrusion Prevention Systems (IPS)
+specialized_domains,computer_networks,DDoS Mitigation
+specialized_domains,computer_networks,Zero-trust Architecture
+specialized_domains,computer_networks,Network Segmentation
+specialized_domains,computer_networks,VLAN
+specialized_domains,computer_networks,QoS (Quality of Service)
+specialized_domains,computer_networks,Network Monitoring
+specialized_domains,computer_networks,Packet Analysis
+specialized_domains,computer_networks,Wireshark
+specialized_domains,computer_networks,tcpdump
+specialized_domains,computer_networks,Network Topology
+specialized_domains,computer_networks,Data Center Architecture
+specialized_domains,computer_networks,Software-Defined Networking (SDN)
+specialized_domains,computer_networks,OpenFlow
+specialized_domains,computer_networks,Network Function Virtualization (NFV)
+specialized_domains,computer_networks,Network Orchestration
+specialized_domains,computer_networks,Edge Computing
+specialized_domains,computer_networks,5G Networks
+specialized_domains,computer_networks,IoT Networking
+specialized_domains,computer_networks,Network Latency Optimization
+specialized_domains,computer_networks,Bandwidth Optimization
+specialized_domains,computer_networks,Network Troubleshooting
+specialized_domains,computer_networks,Network Performance Tuning
+specialized_domains,cybersecurity,Penetration Testing
+specialized_domains,cybersecurity,Vulnerability Assessment
+specialized_domains,cybersecurity,Security Auditing
+specialized_domains,cybersecurity,Threat Modeling
+specialized_domains,cybersecurity,STRIDE
+specialized_domains,cybersecurity,PASTA
+specialized_domains,cybersecurity,Risk Assessment
+specialized_domains,cybersecurity,Secure Code Review
+specialized_domains,cybersecurity,Static Application Security Testing (SAST)
+specialized_domains,cybersecurity,Dynamic Application Security Testing (DAST)
+specialized_domains,cybersecurity,Interactive Application Security Testing (IAST)
+specialized_domains,cybersecurity,Cryptography
+specialized_domains,cybersecurity,Symmetric Encryption
+specialized_domains,cybersecurity,Asymmetric Encryption
+specialized_domains,cybersecurity,Hashing
+specialized_domains,cybersecurity,Digital Signatures
+specialized_domains,cybersecurity,Public Key Infrastructure (PKI)
+specialized_domains,cybersecurity,Certificate Authority (CA)
+specialized_domains,cybersecurity,Identity and Access Management (IAM)
+specialized_domains,cybersecurity,Single Sign-On (SSO)
+specialized_domains,cybersecurity,Multi-factor Authentication (MFA)
+specialized_domains,cybersecurity,Zero Trust
+specialized_domains,cybersecurity,Principle of Least Privilege
+specialized_domains,cybersecurity,Endpoint Security
+specialized_domains,cybersecurity,Antivirus
+specialized_domains,cybersecurity,Anti-malware
+specialized_domains,cybersecurity,Endpoint Detection and Response (EDR)
+specialized_domains,cybersecurity,Mobile Device Management (MDM)
+specialized_domains,cybersecurity,Data Loss Prevention (DLP)
+specialized_domains,cybersecurity,Email Security
+specialized_domains,cybersecurity,SPAM Filtering
+specialized_domains,cybersecurity,Phishing Detection
+specialized_domains,cybersecurity,Cloud Security
+specialized_domains,cybersecurity,Kubernetes Security
+specialized_domains,cybersecurity,Container Security
+specialized_domains,cybersecurity,Secrets Management
+specialized_domains,cybersecurity,Compliance Frameworks
+specialized_domains,cybersecurity,SOC 2
+specialized_domains,cybersecurity,ISO 27001
+specialized_domains,cybersecurity,NIST Cybersecurity Framework
+specialized_domains,cybersecurity,Incident Response
+specialized_domains,cybersecurity,Forensics
+specialized_domains,cybersecurity,Log Analysis
+specialized_domains,cybersecurity,SIEM (Security Information and Event Management)
+specialized_domains,cybersecurity,Threat Intelligence
+specialized_domains,cybersecurity,APT (Advanced Persistent Threats)
+specialized_domains,cybersecurity,Zero-day Vulnerabilities
+specialized_domains,iot,IoT Architecture
+specialized_domains,iot,Edge Computing
+specialized_domains,iot,Fog Computing
+specialized_domains,iot,Device Communication
+specialized_domains,iot,IoT Protocols
+specialized_domains,iot,MQTT
+specialized_domains,iot,CoAP
+specialized_domains,iot,ZigBee
+specialized_domains,iot,Z-Wave
+specialized_domains,iot,LoRaWAN
+specialized_domains,iot,NB-IoT
+specialized_domains,iot,LTE-M
+specialized_domains,iot,5G
+specialized_domains,iot,Sensor Networks
+specialized_domains,iot,Wireless Sensor Networks (WSN)
+specialized_domains,iot,Mesh Networks
+specialized_domains,iot,IoT Gateways
+specialized_domains,iot,Device Management
+specialized_domains,iot,Firmware Updates
+specialized_domains,iot,Over-the-Air (OTA) Updates
+specialized_domains,iot,Device Provisioning
+specialized_domains,iot,Certificate Management
+specialized_domains,iot,IoT Platforms
+specialized_domains,iot,Azure IoT Hub
+specialized_domains,iot,AWS IoT Core
+specialized_domains,iot,Google Cloud IoT
+specialized_domains,iot,IBM Watson IoT
+specialized_domains,iot,ThingSpeak
+specialized_domains,iot,Particle
+specialized_domains,iot,Arduino
+specialized_domains,iot,Raspberry Pi
+specialized_domains,iot,MicroPython
+specialized_domains,iot,CircuitPython
+specialized_domains,iot,IoT Data Processing
+specialized_domains,iot,Real-time Analytics
+specialized_domains,iot,Stream Processing
+specialized_domains,iot,Time Series Analysis
+specialized_domains,iot,Predictive Maintenance
+specialized_domains,iot,Anomaly Detection
+specialized_domains,iot,IoT Security
+specialized_domains,iot,Device Authentication
+specialized_domains,iot,Secure Boot
+specialized_domains,iot,IoT Privacy
+specialized_domains,iot,Data Residency
+specialized_domains,gaming,Game Engines
+specialized_domains,gaming,Unity
+specialized_domains,gaming,Unreal Engine
+specialized_domains,gaming,Godot
+specialized_domains,gaming,Pygame
+specialized_domains,gaming,Phaser
+specialized_domains,gaming,Babylon.js
+specialized_domains,gaming,Three.js
+specialized_domains,gaming,PlayCanvas
+specialized_domains,gaming,Game Physics
+specialized_domains,gaming,Collision Detection
+specialized_domains,gaming,Rigid Body Dynamics
+specialized_domains,gaming,Soft Body Dynamics
+specialized_domains,gaming,Particle Systems
+specialized_domains,gaming,3D Graphics Programming
+specialized_domains,gaming,OpenGL
+specialized_domains,gaming,DirectX
+specialized_domains,gaming,Vulkan
+specialized_domains,gaming,Metal
+specialized_domains,gaming,Shader Programming
+specialized_domains,gaming,GLSL
+specialized_domains,gaming,HLSL
+specialized_domains,gaming,WebGL
+specialized_domains,gaming,Ray Tracing
+specialized_domains,gaming,Global Illumination
+specialized_domains,gaming,Procedural Generation
+specialized_domains,gaming,Terrain Generation
+specialized_domains,gaming,Perlin Noise
+specialized_domains,gaming,Fractal Noise
+specialized_domains,gaming,AI for Games
+specialized_domains,gaming,Pathfinding
+specialized_domains,gaming,A* Algorithm
+specialized_domains,gaming,Behavior Trees
+specialized_domains,gaming,Finite State Machines (FSM)
+specialized_domains,gaming,Decision Trees
+specialized_domains,gaming,Game AI
+specialized_domains,gaming,NPC Behavior
+specialized_domains,gaming,Audio Programming
+specialized_domains,gaming,Sound Design
+specialized_domains,gaming,Music Composition
+specialized_domains,gaming,Game Networking
+specialized_domains,gaming,Multiplayer Architecture
+specialized_domains,gaming,Client-Server
+specialized_domains,gaming,Peer-to-Peer
+specialized_domains,gaming,Network Synchronization
+specialized_domains,gaming,Lag Compensation
+specialized_domains,gaming,Game Economy
+specialized_domains,gaming,Monetization
+specialized_domains,gaming,In-app Purchases
+specialized_domains,gaming,Battle Pass Systems
+specialized_domains,gaming,Loot Systems
+specialized_domains,gaming,User Acquisition
+specialized_domains,gaming,Player Retention
+specialized_domains,gaming,Analytics for Games
+specialized_domains,gaming,Player Behavior Analysis
+specialized_domains,gaming,VR/AR Gaming
+industry_knowledge,retail,Point of Sale (POS) Systems
+industry_knowledge,retail,Inventory Management
+industry_knowledge,retail,Supply Chain Management
+industry_knowledge,retail,Demand Forecasting
+industry_knowledge,retail,Price Optimization
+industry_knowledge,retail,Markdown Optimization
+industry_knowledge,retail,Promotional Planning
+industry_knowledge,retail,Customer Analytics
+industry_knowledge,retail,Omnichannel Retail
+industry_knowledge,retail,Store Operations
+industry_knowledge,retail,Visual Merchandising Analytics
+industry_knowledge,retail,Sales Performance Tracking
+industry_knowledge,retail,Regional Performance Analysis
+industry_knowledge,retail,Product Mix Optimization
+industry_knowledge,retail,SKU Rationalization
+industry_knowledge,retail,Category Management
+industry_knowledge,retail,Vendor Management
+industry_knowledge,retail,Distribution Center Operations
+industry_knowledge,retail,Last-Mile Delivery
+industry_knowledge,retail,Customer Loyalty Programs
+industry_knowledge,retail,Retail CRM
+industry_knowledge,manufacturing,Production Planning
+industry_knowledge,manufacturing,Demand Planning
+industry_knowledge,manufacturing,Capacity Planning
+industry_knowledge,manufacturing,MRP (Material Requirements Planning)
+industry_knowledge,manufacturing,ERP (Enterprise Resource Planning)
+industry_knowledge,manufacturing,Lean Manufacturing
+industry_knowledge,manufacturing,Six Sigma
+industry_knowledge,manufacturing,Quality Control
+industry_knowledge,manufacturing,Defect Prediction
+industry_knowledge,manufacturing,Predictive Maintenance
+industry_knowledge,manufacturing,Equipment Reliability
+industry_knowledge,manufacturing,Production Scheduling
+industry_knowledge,manufacturing,Supply Chain Optimization
+industry_knowledge,manufacturing,Vendor Performance
+industry_knowledge,manufacturing,Cost Accounting
+industry_knowledge,manufacturing,Manufacturing Costing
+industry_knowledge,manufacturing,Process Optimization
+industry_knowledge,manufacturing,Production Yield Analysis
+industry_knowledge,manufacturing,Factory Automation
+industry_knowledge,manufacturing,Industrial IoT
+industry_knowledge,manufacturing,Industry 4.0
+industry_knowledge,manufacturing,Digital Twin
+industry_knowledge,banking,Risk Management
+industry_knowledge,banking,Credit Risk
+industry_knowledge,banking,Market Risk
+industry_knowledge,banking,Operational Risk
+industry_knowledge,banking,Liquidity Risk
+industry_knowledge,banking,Basel III Compliance
+industry_knowledge,banking,Loan Portfolio Management
+industry_knowledge,banking,Credit Scoring
+industry_knowledge,banking,Fraud Detection
+industry_knowledge,banking,Anti-Money Laundering (AML)
+industry_knowledge,banking,Know Your Customer (KYC)
+industry_knowledge,banking,Customer Due Diligence (CDD)
+industry_knowledge,banking,Enhanced Due Diligence (EDD)
+industry_knowledge,banking,Transaction Monitoring
+industry_knowledge,banking,Sanctions Screening
+industry_knowledge,banking,Regulatory Reporting
+industry_knowledge,banking,Capital Adequacy Ratio (CAR)
+industry_knowledge,banking,Core Banking Systems
+industry_knowledge,banking,Payment Processing
+industry_knowledge,banking,Wire Transfers
+industry_knowledge,banking,ACH Processing
+industry_knowledge,banking,Treasury Management
+industry_knowledge,banking,Interest Rate Management
+industry_knowledge,banking,Bond Portfolio Management
+industry_knowledge,banking,Wealth Management
+industry_knowledge,banking,Private Banking
+industry_knowledge,banking,Investment Banking
+industry_knowledge,banking,Mergers and Acquisitions
+industry_knowledge,banking,Valuation
+industry_knowledge,banking,Due Diligence
+industry_knowledge,banking,Financial Structuring
+industry_knowledge,insurance,Underwriting
+industry_knowledge,insurance,Risk Assessment
+industry_knowledge,insurance,Premium Calculation
+industry_knowledge,insurance,Claims Processing
+industry_knowledge,insurance,Claims Adjudication
+industry_knowledge,insurance,Fraud Detection
+industry_knowledge,insurance,Loss Prediction
+industry_knowledge,insurance,Reserve Estimation
+industry_knowledge,insurance,Actuarial Analysis
+industry_knowledge,insurance,Life Insurance
+industry_knowledge,insurance,Health Insurance
+industry_knowledge,insurance,Property and Casualty Insurance
+industry_knowledge,insurance,Auto Insurance
+industry_knowledge,insurance,Reinsurance
+industry_knowledge,insurance,Policy Administration
+industry_knowledge,insurance,Customer Retention
+industry_knowledge,insurance,Churn Prediction
+industry_knowledge,insurance,Cross-sell/Upsell
+industry_knowledge,insurance,Policy Renewal
+industry_knowledge,insurance,Commission Tracking
+industry_knowledge,insurance,Agent Management
+industry_knowledge,insurance,Compliance
+industry_knowledge,insurance,Solvency II
+industry_knowledge,insurance,GDPR for Insurance
+industry_knowledge,insurance,Predictive Analytics for Insurance
+industry_knowledge,telecommunications,Network Planning
+industry_knowledge,telecommunications,Network Optimization
+industry_knowledge,telecommunications,Spectrum Management
+industry_knowledge,telecommunications,Call Routing
+industry_knowledge,telecommunications,Load Balancing
+industry_knowledge,telecommunications,Quality of Service (QoS)
+industry_knowledge,telecommunications,Network Reliability
+industry_knowledge,telecommunications,Customer Acquisition
+industry_knowledge,telecommunications,Customer Retention
+industry_knowledge,telecommunications,Churn Prediction
+industry_knowledge,telecommunications,Revenue Optimization
+industry_knowledge,telecommunications,Service Bundling
+industry_knowledge,telecommunications,Billing Systems
+industry_knowledge,telecommunications,Invoice Generation
+industry_knowledge,telecommunications,Usage-based Billing
+industry_knowledge,telecommunications,Roaming Charges
+industry_knowledge,telecommunications,Customer Service Analytics
+industry_knowledge,telecommunications,Network Maintenance
+industry_knowledge,telecommunications,Fault Detection
+industry_knowledge,telecommunications,Network Upgrades
+industry_knowledge,telecommunications,5G Deployment
+industry_knowledge,telecommunications,Fiber Optics
+industry_knowledge,telecommunications,Cloud RAN
+industry_knowledge,telecommunications,Network Slicing
+industry_knowledge,energy,Power Generation Planning
+industry_knowledge,energy,Demand Forecasting
+industry_knowledge,energy,Load Forecasting
+industry_knowledge,energy,Grid Optimization
+industry_knowledge,energy,Energy Trading
+industry_knowledge,energy,Renewable Energy Integration
+industry_knowledge,energy,Solar Analytics
+industry_knowledge,energy,Wind Analytics
+industry_knowledge,energy,Battery Storage Management
+industry_knowledge,energy,Smart Grid
+industry_knowledge,energy,Meter Reading
+industry_knowledge,energy,Demand Response
+industry_knowledge,energy,Peak Load Management
+industry_knowledge,energy,Energy Efficiency
+industry_knowledge,energy,Carbon Footprint Analysis
+industry_knowledge,energy,Emissions Trading
+industry_knowledge,energy,Utility Billing
+industry_knowledge,energy,Customer Energy Usage
+industry_knowledge,energy,Predictive Maintenance for Equipment
+industry_knowledge,energy,Outage Prediction
+industry_knowledge,energy,Infrastructure Asset Management
+industry_knowledge,real_estate,Property Valuation
+industry_knowledge,real_estate,Comparable Sales Analysis
+industry_knowledge,real_estate,Income Approach Valuation
+industry_knowledge,real_estate,Cost Approach Valuation
+industry_knowledge,real_estate,Market Analysis
+industry_knowledge,real_estate,Demand Forecasting
+industry_knowledge,real_estate,Location Analytics
+industry_knowledge,real_estate,Neighborhood Analysis
+industry_knowledge,real_estate,Rental Analysis
+industry_knowledge,real_estate,Occupancy Rate Prediction
+industry_knowledge,real_estate,Tenant Analytics
+industry_knowledge,real_estate,Lease Management
+industry_knowledge,real_estate,Property Management
+industry_knowledge,real_estate,Maintenance Prediction
+industry_knowledge,real_estate,Capital Expenditure Planning
+industry_knowledge,real_estate,ROI Analysis
+industry_knowledge,real_estate,Portfolio Analysis
+industry_knowledge,real_estate,Mortgage Analysis
+industry_knowledge,real_estate,Loan-to-Value (LTV)
+industry_knowledge,real_estate,Debt Service Coverage Ratio (DSCR)
+industry_knowledge,real_estate,Real Estate Development
+industry_knowledge,real_estate,Site Selection
+industry_knowledge,real_estate,Zoning Analysis
+industry_knowledge,real_estate,Urban Development
+soft_business_skills,N/A,Executive Presence
+soft_business_skills,N/A,Board Presentation
+soft_business_skills,N/A,Investor Relations
+soft_business_skills,N/A,Fundraising
+soft_business_skills,N/A,Pitch Preparation
+soft_business_skills,N/A,Business Planning
+soft_business_skills,N/A,Strategic Planning
+soft_business_skills,N/A,Scenario Planning
+soft_business_skills,N/A,Competitive Intelligence
+soft_business_skills,N/A,Market Intelligence
+soft_business_skills,N/A,Industry Analysis
+soft_business_skills,N/A,Business Case Development
+soft_business_skills,N/A,ROI Calculation
+soft_business_skills,N/A,Feasibility Studies
+soft_business_skills,N/A,Risk-Benefit Analysis
+soft_business_skills,N/A,Cost-Benefit Analysis
+soft_business_skills,N/A,Budget Management
+soft_business_skills,N/A,Financial Planning
+soft_business_skills,N/A,Resource Allocation
+soft_business_skills,N/A,Capacity Planning
+soft_business_skills,N/A,Vendor Negotiation
+soft_business_skills,N/A,Contract Negotiation
+soft_business_skills,N/A,Partnership Development
+soft_business_skills,N/A,Joint Venture Management
+soft_business_skills,N/A,Supplier Relationship Management
+soft_business_skills,N/A,Customer Relationship Management
+soft_business_skills,N/A,Account Management
+soft_business_skills,N/A,Sales Management
+soft_business_skills,N/A,Marketing Strategy
+soft_business_skills,N/A,Product Strategy
+soft_business_skills,N/A,Brand Management
+soft_business_skills,N/A,Market Positioning
+soft_business_skills,N/A,Go-to-Market Strategy
+soft_business_skills,N/A,Distribution Strategy
+soft_business_skills,N/A,Pricing Strategy
+soft_business_skills,N/A,Growth Hacking
+soft_business_skills,N/A,Viral Marketing
+soft_business_skills,N/A,Conversion Optimization
+soft_business_skills,N/A,User Acquisition
+soft_business_skills,N/A,Retention Strategy
+soft_business_skills,N/A,Expansion Strategy
+soft_business_skills,N/A,Market Expansion
+soft_business_skills,N/A,Geographic Expansion
+soft_business_skills,N/A,Product Expansion
+soft_business_skills,N/A,Diversification
+soft_business_skills,N/A,Acquisition Strategy
+soft_business_skills,N/A,Merger Integration
+soft_business_skills,N/A,Divestiture
+soft_business_skills,N/A,Operational Efficiency
+soft_business_skills,N/A,Process Optimization
+soft_business_skills,N/A,Lean Thinking
+soft_business_skills,N/A,Total Quality Management (TQM)
+soft_business_skills,N/A,Supply Chain Management
+soft_business_skills,N/A,Logistics Management
+specialized_technical_skills,N/A,Quantum Computing
+specialized_technical_skills,N/A,Quantum Algorithms
+specialized_technical_skills,N/A,Quantum Error Correction
+specialized_technical_skills,N/A,Quantum Machine Learning
+specialized_technical_skills,N/A,Quantum Simulation
+specialized_technical_skills,N/A,DNA Computing
+specialized_technical_skills,N/A,Optical Computing
+specialized_technical_skills,N/A,Neuromorphic Computing
+specialized_technical_skills,N/A,Edge AI
+specialized_technical_skills,N/A,Federated Learning
+specialized_technical_skills,N/A,Differential Privacy
+specialized_technical_skills,N/A,Homomorphic Encryption
+specialized_technical_skills,N/A,Zero-Knowledge Proofs
+specialized_technical_skills,N/A,Secure Multi-party Computation
+specialized_technical_skills,N/A,Trusted Execution Environments (TEE)
+specialized_technical_skills,N/A,Hardware Security Module (HSM)
+specialized_technical_skills,N/A,Biometric Security
+specialized_technical_skills,N/A,Behavioral Biometrics
+specialized_technical_skills,N/A,Voice Recognition
+specialized_technical_skills,N/A,Facial Recognition
+specialized_technical_skills,N/A,Iris Recognition
+specialized_technical_skills,N/A,Fingerprint Recognition
+specialized_technical_skills,N/A,Gait Recognition
+specialized_technical_skills,N/A,Brain-Computer Interface (BCI)
+specialized_technical_skills,N/A,EEG Signal Processing
+specialized_technical_skills,N/A,Wearable Device Integration
+specialized_technical_skills,N/A,Haptic Feedback
+specialized_technical_skills,N/A,Virtual Reality (VR)
+specialized_technical_skills,N/A,Augmented Reality (AR)
+specialized_technical_skills,N/A,Mixed Reality (MR)
+specialized_technical_skills,N/A,Extended Reality (XR)
+specialized_technical_skills,N/A,Spatial Computing
+specialized_technical_skills,N/A,Motion Capture
+specialized_technical_skills,N/A,Volumetric Capture
+specialized_technical_skills,N/A,Light Field Imaging
+specialized_technical_skills,N/A,Holographic Display
+specialized_technical_skills,N/A,Speech Synthesis
+specialized_technical_skills,N/A,Voice Cloning
+specialized_technical_skills,N/A,Natural Dialogue Systems
+specialized_technical_skills,N/A,Conversational AI
+specialized_technical_skills,N/A,Multimodal AI
+specialized_technical_skills,N/A,Vision-Language Models
+specialized_technical_skills,N/A,Audio-Visual Learning
+specialized_technical_skills,N/A,Cross-modal Learning
+specialized_technical_skills,N/A,Knowledge Distillation
+specialized_technical_skills,N/A,Model Compression
+specialized_technical_skills,N/A,Neural Architecture Search (NAS)
+specialized_technical_skills,N/A,Automated Machine Learning (AutoML)
+specialized_technical_skills,N/A,Explainable AI (XAI)
+specialized_technical_skills,N/A,Interpretable ML
+specialized_technical_skills,N/A,LIME (Local Interpretable Model-agnostic Explanations)
+specialized_technical_skills,N/A,SHAP (SHapley Additive exPlanations)
+specialized_technical_skills,N/A,Fairness in AI
+specialized_technical_skills,N/A,Bias Detection and Mitigation
+specialized_technical_skills,N/A,Responsible AI
+specialized_technical_skills,N/A,AI Ethics
+specialized_technical_skills,N/A,Algorithmic Governance
+advanced_mathematics,N/A,Linear Algebra
+advanced_mathematics,N/A,Matrix Decomposition
+advanced_mathematics,N/A,Eigenvalue Decomposition
+advanced_mathematics,N/A,Singular Value Decomposition (SVD)
+advanced_mathematics,N/A,QR Decomposition
+advanced_mathematics,N/A,Calculus
+advanced_mathematics,N/A,Differential Calculus
+advanced_mathematics,N/A,Integral Calculus
+advanced_mathematics,N/A,Multivariable Calculus
+advanced_mathematics,N/A,Vector Calculus
+advanced_mathematics,N/A,Differential Equations
+advanced_mathematics,N/A,Ordinary Differential Equations (ODE)
+advanced_mathematics,N/A,Partial Differential Equations (PDE)
+advanced_mathematics,N/A,Stochastic Differential Equations (SDE)
+advanced_mathematics,N/A,Probability Theory
+advanced_mathematics,N/A,Bayesian Probability
+advanced_mathematics,N/A,Conditional Probability
+advanced_mathematics,N/A,Bayes Theorem
+advanced_mathematics,N/A,Distribution Theory
+advanced_mathematics,N/A,Normal Distribution
+advanced_mathematics,N/A,Poisson Distribution
+advanced_mathematics,N/A,Exponential Distribution
+advanced_mathematics,N/A,Uniform Distribution
+advanced_mathematics,N/A,Beta Distribution
+advanced_mathematics,N/A,Dirichlet Distribution
+advanced_mathematics,N/A,Multivariate Distributions
+advanced_mathematics,N/A,Copulas
+advanced_mathematics,N/A,Gaussian Processes
+advanced_mathematics,N/A,Markov Chains
+advanced_mathematics,N/A,Hidden Markov Models (HMM)
+advanced_mathematics,N/A,Markov Decision Processes (MDP)
+advanced_mathematics,N/A,Monte Carlo Methods
+advanced_mathematics,N/A,Markov Chain Monte Carlo (MCMC)
+advanced_mathematics,N/A,Variational Inference
+advanced_mathematics,N/A,Optimization
+advanced_mathematics,N/A,Convex Optimization
+advanced_mathematics,N/A,Non-convex Optimization
+advanced_mathematics,N/A,Gradient Descent
+advanced_mathematics,N/A,Stochastic Gradient Descent (SGD)
+advanced_mathematics,N/A,Adam Optimizer
+advanced_mathematics,N/A,Momentum
+advanced_mathematics,N/A,Nesterov Accelerated Gradient
+advanced_mathematics,N/A,RMSprop
+advanced_mathematics,N/A,Adagrad
+advanced_mathematics,N/A,Linear Programming
+advanced_mathematics,N/A,Integer Programming
+advanced_mathematics,N/A,Quadratic Programming
+advanced_mathematics,N/A,Semidefinite Programming
+advanced_mathematics,N/A,Conic Programming
+advanced_mathematics,N/A,Graph Theory
+advanced_mathematics,N/A,Network Analysis
+advanced_mathematics,N/A,Shortest Path Algorithms
+advanced_mathematics,N/A,Minimum Spanning Trees
+advanced_mathematics,N/A,Maximum Flow
+advanced_mathematics,N/A,Matching Algorithms
+advanced_mathematics,N/A,Coloring Problems
+advanced_mathematics,N/A,Boolean Algebra
+advanced_mathematics,N/A,Formal Logic
+advanced_mathematics,N/A,Propositional Logic
+advanced_mathematics,N/A,Predicate Logic
+advanced_mathematics,N/A,Modal Logic
+advanced_mathematics,N/A,Fuzzy Logic
+advanced_mathematics,N/A,Number Theory
+advanced_mathematics,N/A,Group Theory
+advanced_mathematics,N/A,Ring Theory
+advanced_mathematics,N/A,Field Theory
+advanced_mathematics,N/A,Topology
+advanced_mathematics,N/A,Manifold Theory
+advanced_mathematics,N/A,Measure Theory
+advanced_mathematics,N/A,Functional Analysis
+advanced_mathematics,N/A,Fourier Analysis
+advanced_mathematics,N/A,Wavelet Analysis
+advanced_mathematics,N/A,Harmonic Analysis
+advanced_mathematics,N/A,Complex Analysis
+advanced_mathematics,N/A,Numerical Analysis
+advanced_mathematics,N/A,Interpolation
+advanced_mathematics,N/A,Approximation Theory
+advanced_mathematics,N/A,Root Finding
+advanced_mathematics,N/A,Integration Methods
+advanced_mathematics,N/A,Differential Equation Solving
+advanced_mathematics,N/A,Matrix Computation
+advanced_mathematics,N/A,Spectral Methods
+advanced_mathematics,N/A,Finite Element Methods
+advanced_mathematics,N/A,Finite Difference Methods
+advanced_mathematics,N/A,Finite Volume Methods

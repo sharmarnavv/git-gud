@@ -1,0 +1,173 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: [3.8, 3.9, "3.10", "3.11"]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Cache pip dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements-dev.txt
+        python -m spacy download en_core_web_sm
+
+    - name: Lint with flake8
+      run: |
+        flake8 job_parser/ main.py test_parser.py --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 job_parser/ main.py test_parser.py --count --exit-zero --max-complexity=10 --max-line-length=88 --statistics
+
+    - name: Check code formatting with black
+      run: |
+        black --check job_parser/ main.py test_parser.py
+
+    - name: Check import sorting with isort
+      run: |
+        isort --check-only job_parser/ main.py test_parser.py
+
+    - name: Type checking with mypy
+      run: |
+        mypy job_parser/ --ignore-missing-imports
+      continue-on-error: true
+
+    - name: Test with pytest
+      run: |
+        python test_parser.py
+
+    - name: Test CLI functionality
+      run: |
+        python main.py test_job_descriptions.json -f summary
+        python main.py test_job_descriptions.json -f json --pretty -o test_output.json
+
+    - name: Upload test results
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: test-results-${{ matrix.os }}-${{ matrix.python-version }}
+        path: |
+          test_output.json
+          htmlcov/
+        retention-days: 30
+
+  security:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install safety bandit
+
+    - name: Security check with safety
+      run: |
+        safety check --json || true
+
+    - name: Security check with bandit
+      run: |
+        bandit -r job_parser/ -f json || true
+
+  performance:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        python -m spacy download en_core_web_sm
+
+    - name: Performance benchmark
+      run: |
+        python -c "
+        import time
+        from job_parser import JobDescriptionParser
+        
+        parser = JobDescriptionParser()
+        job_text = 'Senior Python developer with Django, React, and AWS experience. 5+ years required.'
+        
+        # Warm up
+        parser.parse_job_description(job_text)
+        
+        # Benchmark
+        start_time = time.time()
+        for _ in range(10):
+            result = parser.parse_job_description(job_text)
+        end_time = time.time()
+        
+        avg_time = (end_time - start_time) / 10
+        print(f'Average processing time: {avg_time:.3f} seconds')
+        print(f'Skills found: {len(result.skills_required)}')
+        
+        # Performance should be under 2 seconds per job
+        assert avg_time < 2.0, f'Performance regression: {avg_time:.3f}s > 2.0s'
+        print('Performance benchmark passed!')
+        "
+
+  build:
+    needs: [test, security]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    - name: Install build dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build twine
+
+    - name: Build package
+      run: |
+        python -m build
+
+    - name: Check package
+      run: |
+        twine check dist/*
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: dist
+        path: dist/
+        retention-days: 90

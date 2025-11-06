@@ -1,0 +1,223 @@
+[
+  {
+    "id": "jd_001",
+    "title": "Senior Software Engineer",
+    "company": "TechCorp Inc.",
+    "experience_level": "senior",
+    "source": "company_website",
+    "description": "We are seeking a Senior Software Engineer to join our dynamic team. The ideal candidate will have 5+ years of experience in full-stack development using Python and React. You will be responsible for designing and implementing scalable web applications, working with databases, and collaborating with cross-functional teams.\n\nKey Responsibilities:\n- Develop and maintain web applications using Python, Django, and React\n- Design and optimize database schemas using PostgreSQL\n- Implement RESTful APIs and microservices architecture\n- Collaborate with product managers and designers\n- Mentor junior developers and conduct code reviews\n- Participate in agile development processes\n\nRequired Skills:\n- 5+ years of experience in software development\n- Proficiency in Python, JavaScript, and React\n- Experience with Django or Flask frameworks\n- Strong knowledge of SQL and database design\n- Familiarity with Git version control\n- Experience with cloud platforms (AWS preferred)\n- Excellent problem-solving and communication skills\n- Bachelor's degree in Computer Science or related field",
+    "expected_output": {
+      "technical_skills": [
+        "Python",
+        "React",
+        "Django",
+        "JavaScript",
+        "PostgreSQL",
+        "SQL",
+        "RESTful APIs",
+        "microservices",
+        "Flask",
+        "Git",
+        "AWS"
+      ],
+      "soft_skills": [
+        "problem-solving",
+        "communication",
+        "teamwork",
+        "mentoring",
+        "leadership"
+      ],
+      "experience_level": "senior",
+      "years_experience": "5+",
+      "education": "Bachelor's degree"
+    }
+  },
+  {
+    "id": "jd_002",
+    "title": "Junior Data Scientist",
+    "company": "DataAnalytics Solutions",
+    "experience_level": "junior",
+    "source": "linkedin",
+    "description": "Join our growing data science team as a Junior Data Scientist! This is an excellent opportunity for recent graduates or professionals with 1-2 years of experience to grow their career in machine learning and data analytics.\n\nWhat you'll do:\n• Analyze large datasets to extract meaningful insights\n• Build predictive models using Python and scikit-learn\n• Create data visualizations with matplotlib and seaborn\n• Work with SQL databases to extract and clean data\n• Collaborate with senior data scientists on ML projects\n• Present findings to stakeholders\n\nWe're looking for:\n• 1-2 years of experience in data analysis or related field\n• Strong Python programming skills\n• Experience with pandas, numpy, and scikit-learn\n• Knowledge of statistics and machine learning fundamentals\n• Familiarity with SQL and data visualization tools\n• Strong analytical thinking and attention to detail\n• Excellent written and verbal communication skills\n• Master's degree in Data Science, Statistics, or related field preferred",
+    "expected_output": {
+      "technical_skills": [
+        "Python",
+        "scikit-learn",
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "seaborn",
+        "SQL",
+        "machine learning",
+        "data visualization",
+        "statistics"
+      ],
+      "soft_skills": [
+        "analytical thinking",
+        "attention to detail",
+        "communication",
+        "teamwork"
+      ],
+      "experience_level": "junior",
+      "years_experience": "1-2",
+      "education": "Master's degree preferred"
+    }
+  },
+  {
+    "id": "jd_003",
+    "title": "DevOps Engineer",
+    "company": "CloudFirst Technologies",
+    "experience_level": "mid",
+    "source": "company_website",
+    "description": "CloudFirst Technologies is looking for a skilled DevOps Engineer to help us scale our infrastructure and improve our deployment processes. You'll work with cutting-edge cloud technologies and help build robust, automated systems.\n\nResponsibilities:\n- Design and maintain CI/CD pipelines using Jenkins and GitLab CI\n- Manage containerized applications with Docker and Kubernetes\n- Monitor and optimize AWS cloud infrastructure\n- Implement infrastructure as code using Terraform\n- Ensure system security and compliance\n- Troubleshoot production issues and implement solutions\n- Collaborate with development teams to improve deployment processes\n\nRequirements:\n- 3-5 years of experience in DevOps or system administration\n- Hands-on experience with AWS services (EC2, S3, RDS, Lambda)\n- Proficiency with Docker and Kubernetes\n- Experience with Infrastructure as Code tools (Terraform, CloudFormation)\n- Strong scripting skills in Python or Bash\n- Knowledge of monitoring tools (Prometheus, Grafana, ELK stack)\n- Understanding of networking and security best practices\n- Strong problem-solving skills and ability to work under pressure",
+    "expected_output": {
+      "technical_skills": [
+        "Jenkins",
+        "GitLab CI",
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "EC2",
+        "S3",
+        "RDS",
+        "Lambda",
+        "Terraform",
+        "CloudFormation",
+        "Python",
+        "Bash",
+        "Prometheus",
+        "Grafana",
+        "ELK stack",
+        "CI/CD",
+        "infrastructure as code"
+      ],
+      "soft_skills": [
+        "problem-solving",
+        "teamwork",
+        "working under pressure"
+      ],
+      "experience_level": "mid",
+      "years_experience": "3-5",
+      "education": null
+    }
+  },
+  {
+
+    "id": "jd_004",
+    "title": "Frontend Developer",
+    "company": "StartupXYZ",
+    "experience_level": "entry",
+    "source": "linkedin",
+    "description": "StartupXYZ is seeking a passionate Frontend Developer to join our small but mighty team! This is a great opportunity for someone just starting their career or looking to transition into frontend development.\n\n🚀 What you'll be doing:\n- Building responsive web applications using React and TypeScript\n- Working closely with our design team to implement pixel-perfect UIs\n- Optimizing applications for maximum speed and scalability\n- Writing clean, maintainable code following best practices\n- Learning and growing with our supportive team\n\n✨ What we're looking for:\n- 0-2 years of professional frontend development experience\n- Solid understanding of HTML, CSS, and JavaScript\n- Experience with React (or similar framework like Vue.js)\n- Familiarity with modern development tools (Webpack, npm/yarn)\n- Basic understanding of version control with Git\n- Eagerness to learn and adapt to new technologies\n- Strong attention to detail and design sense\n- Good communication skills and team player attitude\n\nBonus points for:\n- Experience with TypeScript\n- Knowledge of CSS preprocessors (Sass, Less)\n- Understanding of responsive design principles\n- Any backend experience (Node.js, Python)",
+    "expected_output": {
+      "technical_skills": [
+        "React",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Vue.js",
+        "Webpack",
+        "npm",
+        "yarn",
+        "Git",
+        "Sass",
+        "Less",
+        "responsive design",
+        "Node.js",
+        "Python"
+      ],
+      "soft_skills": [
+        "attention to detail",
+        "communication",
+        "teamwork",
+        "adaptability",
+        "eagerness to learn"
+      ],
+      "experience_level": "entry",
+      "years_experience": "0-2",
+      "education": null
+    }
+  },
+  {
+    "id": "jd_005",
+    "title": "Machine Learning Engineer",
+    "company": "AI Innovations Ltd",
+    "experience_level": "senior",
+    "source": "company_website",
+    "description": "AI Innovations Ltd is at the forefront of artificial intelligence research and development. We are seeking an experienced Machine Learning Engineer to lead our ML initiatives and drive innovation in our products.\n\nRole Overview:\nAs a Senior ML Engineer, you will design, develop, and deploy machine learning models at scale. You'll work with large datasets, implement state-of-the-art algorithms, and collaborate with research teams to bring cutting-edge AI solutions to production.\n\nKey Responsibilities:\n• Design and implement end-to-end ML pipelines\n• Develop and optimize deep learning models using TensorFlow and PyTorch\n• Work with big data technologies (Spark, Hadoop) for data processing\n• Deploy models to production using MLOps best practices\n• Conduct A/B testing and model performance evaluation\n• Research and implement latest ML techniques and algorithms\n• Mentor junior team members and provide technical leadership\n\nRequired Qualifications:\n• PhD or Master's in Computer Science, Machine Learning, or related field\n• 5+ years of experience in machine learning and data science\n• Expert-level proficiency in Python and ML libraries (scikit-learn, TensorFlow, PyTorch)\n• Strong mathematical background in statistics, linear algebra, and optimization\n• Experience with cloud platforms (AWS, GCP, Azure) and containerization (Docker)\n• Proficiency in SQL and NoSQL databases\n• Experience with MLOps tools (MLflow, Kubeflow, Airflow)\n• Strong research background with publications preferred\n• Excellent analytical and problem-solving skills\n• Leadership experience and ability to work in cross-functional teams",
+    "expected_output": {
+      "technical_skills": [
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "scikit-learn",
+        "Spark",
+        "Hadoop",
+        "MLOps",
+        "AWS",
+        "GCP",
+        "Azure",
+        "Docker",
+        "SQL",
+        "NoSQL",
+        "MLflow",
+        "Kubeflow",
+        "Airflow",
+        "machine learning",
+        "deep learning",
+        "statistics",
+        "linear algebra",
+        "optimization"
+      ],
+      "soft_skills": [
+        "analytical thinking",
+        "problem-solving",
+        "leadership",
+        "mentoring",
+        "teamwork",
+        "research"
+      ],
+      "experience_level": "senior",
+      "years_experience": "5+",
+      "education": "PhD or Master's degree"
+    }
+  },
+  {
+    "id": "jd_006",
+    "title": "Full Stack Developer",
+    "company": "E-commerce Solutions Inc",
+    "experience_level": "mid",
+    "source": "linkedin",
+    "description": "E-commerce Solutions Inc is looking for a talented Full Stack Developer to help build and maintain our e-commerce platform. You'll work on both frontend and backend systems, ensuring seamless user experiences and robust functionality.\n\nWhat You'll Do:\n→ Develop and maintain web applications using React and Node.js\n→ Build RESTful APIs and integrate with third-party services\n→ Work with databases (MongoDB, PostgreSQL) for data management\n→ Implement payment processing and security features\n→ Optimize application performance and scalability\n→ Collaborate with UX/UI designers and product managers\n→ Participate in code reviews and maintain coding standards\n→ Debug and troubleshoot issues across the full stack\n\nWhat We're Looking For:\n→ 2-4 years of full-stack development experience\n→ Strong proficiency in JavaScript/TypeScript\n→ Experience with React and modern frontend frameworks\n→ Backend development experience with Node.js and Express\n→ Database experience with both SQL and NoSQL systems\n→ Understanding of RESTful API design and implementation\n→ Familiarity with version control systems (Git)\n→ Experience with testing frameworks (Jest, Cypress)\n→ Knowledge of deployment and CI/CD processes\n→ Strong debugging and problem-solving abilities\n→ Excellent communication and collaboration skills\n→ Experience with e-commerce platforms is a plus",
+    "expected_output": {
+      "technical_skills": [
+        "React",
+        "Node.js",
+        "JavaScript",
+        "TypeScript",
+        "Express",
+        "MongoDB",
+        "PostgreSQL",
+        "SQL",
+        "NoSQL",
+        "RESTful APIs",
+        "Git",
+        "Jest",
+        "Cypress",
+        "CI/CD",
+        "payment processing"
+      ],
+      "soft_skills": [
+        "problem-solving",
+        "debugging",
+        "communication",
+        "collaboration",
+        "teamwork"
+      ],
+      "experience_level": "mid",
+      "years_experience": "2-4",
+      "education": null
+    }
+  }
+]
