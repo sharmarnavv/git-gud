@@ -1,7 +1,6 @@
 # Job Description Parser
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 A powerful, AI-driven job description parser that extracts structured information from unstructured job postings. Built with advanced NLP techniques including semantic matching and named entity recognition (NER) to identify technical skills, experience levels, and tools mentioned in job descriptions.
@@ -420,9 +419,6 @@ The test suite covers:
 4. **Skill Categorizer**: Groups and scores extracted skills
 5. **Performance Optimizer**: Handles caching and batch processing
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
 ### Development Setup
 
@@ -453,21 +449,11 @@ This project uses:
 - **flake8** for linting
 - **mypy** for type checking
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - [Sentence-Transformers](https://www.sbert.net/) for semantic similarity
 - [spaCy](https://spacy.io/) for natural language processing
 - [scikit-learn](https://scikit-learn.org/) for machine learning utilities
-
-## 📞 Support
-
-- 📧 Email: support@example.com
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/job-description-parser/issues)
-- 📖 Documentation: [Wiki](https://github.com/yourusername/job-description-parser/wiki)
 
 ## 🗺 Roadmap
 
@@ -479,5 +465,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] Real-time processing capabilities
 
 ---
-
-**Made with ❤️ by the Job Description Parser Team**
