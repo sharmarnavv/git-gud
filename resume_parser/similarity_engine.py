@@ -7,6 +7,8 @@ for comparing resumes against job descriptions with hybrid scoring.
 
 import logging
 import numpy as np
+import time
+from dataclasses import dataclass
 from typing import Dict, List, Tuple, Optional, Any, Union
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -1637,3 +1639,787 @@ class HybridSimilarityCalculator:
                     logger.warning(f"Unknown weighting parameter: {key}")
         except Exception as e:
             logger.error(f"Failed to update weighting parameters: {e}")
+
+
+@dataclass
+class SimilarityReport:
+    """Comprehensive similarity analysis report.
+    
+    Attributes:
+        overall_score: Overall similarity score (0-100%)
+        component_scores: Individual component scores
+        sub_scores: Detailed sub-scores for skills, experience, education
+        analysis_breakdown: Detailed analysis of each component
+        recommendations: Improvement recommendations
+        metadata: Analysis metadata and statistics
+    """
+    overall_score: float
+    component_scores: Dict[str, float]
+    sub_scores: Dict[str, Any]
+    analysis_breakdown: Dict[str, Any]
+    recommendations: List[str]
+    metadata: Dict[str, Any]
+
+
+class SimilarityEngine:
+    """Main similarity engine orchestrating all similarity calculation components.
+    
+    This class integrates TF-IDF, SBERT, and sub-scoring components into a unified
+    engine with performance optimization, caching, and detailed reporting capabilities.
+    """
+    
+    def __init__(self,
+                 tfidf_config: Optional[Dict[str, Any]] = None,
+                 sbert_config: Optional[Dict[str, Any]] = None,
+                 hybrid_config: Optional[Dict[str, Any]] = None,
+                 enable_caching: bool = True,
+                 cache_size_limit: int = 1000,
+                 enable_performance_monitoring: bool = True):
+        """Initialize the main similarity engine.
+        
+        Args:
+            tfidf_config: Configuration for TF-IDF calculator
+            sbert_config: Configuration for SBERT calculator
+            hybrid_config: Configuration for hybrid calculator
+            enable_caching: Whether to enable result caching
+            cache_size_limit: Maximum number of cached results
+            enable_performance_monitoring: Whether to track performance metrics
+        """
+        self.enable_caching = enable_caching
+        self.cache_size_limit = cache_size_limit
+        self.enable_performance_monitoring = enable_performance_monitoring
+        
+        # Initialize component calculators
+        try:
+            # Initialize hybrid calculator (which includes TF-IDF and SBERT)
+            hybrid_config = hybrid_config or {}
+            if tfidf_config:
+                hybrid_config['tfidf_config'] = tfidf_config
+            if sbert_config:
+                hybrid_config['sbert_config'] = sbert_config
+            
+            self.hybrid_calculator = HybridSimilarityCalculator(**hybrid_config)
+            
+            # Initialize sub-scoring components
+            from .sub_scoring_engine import SkillsSimilarityScorer, ExperienceMatchingScorer
+            self.skills_scorer = SkillsSimilarityScorer()
+            self.experience_scorer = ExperienceMatchingScorer()
+            
+            logger.info("Similarity engine initialized successfully")
+            
+        except Exception as e:
+            logger.error(f"Failed to initialize similarity engine: {e}")
+            raise ValueError(f"Similarity engine initialization failed: {e}")
+        
+        # Caching infrastructure
+        self._similarity_cache = {}
+        self._report_cache = {}
+        self._precomputed_embeddings = {}
+        
+        # Performance monitoring
+        self._performance_stats = {
+            'total_calculations': 0,
+            'cache_hits': 0,
+            'cache_misses': 0,
+            'average_calculation_time': 0.0,
+            'total_calculation_time': 0.0,
+            'batch_calculations': 0,
+            'single_calculations': 0,
+            'error_count': 0,
+            'component_usage': {
+                'hybrid': 0,
+                'skills': 0,
+                'experience': 0,
+                'education': 0
+            }
+        }
+        
+        # Configuration tracking
+        self._config = {
+            'tfidf_config': tfidf_config or {},
+            'sbert_config': sbert_config or {},
+            'hybrid_config': hybrid_config or {},
+            'enable_caching': enable_caching,
+            'cache_size_limit': cache_size_limit,
+            'enable_performance_monitoring': enable_performance_monitoring
+        }
+        
+        logger.info("Similarity engine orchestrator ready")
+    
+    def calculate_comprehensive_similarity(self,
+                                         resume: 'ParsedResume',
+                                         job_description: 'ParsedJobDescription',
+                                         resume_text: str = "",
+                                         job_text: str = "",
+                                         include_sub_scores: bool = True,
+                                         custom_weights: Optional[Dict[str, float]] = None) -> SimilarityReport:
+        """Calculate comprehensive similarity with detailed analysis and reporting.
+        
+        Args:
+            resume: Parsed resume data
+            job_description: Parsed job description data
+            resume_text: Raw resume text (for hybrid similarity)
+            job_text: Raw job description text (for hybrid similarity)
+            include_sub_scores: Whether to calculate detailed sub-scores
+            custom_weights: Optional custom weights for components
+            
+        Returns:
+            Comprehensive similarity report with all analysis details
+        """
+        import time
+        start_time = time.time()
+        
+        try:
+            logger.info("Starting comprehensive similarity calculation")
+            
+            # Check cache first
+            cache_key = self._generate_cache_key(resume, job_description, include_sub_scores, custom_weights)
+            if self.enable_caching and cache_key in self._report_cache:
+                self._performance_stats['cache_hits'] += 1
+                logger.debug("Comprehensive similarity retrieved from cache")
+                return self._report_cache[cache_key]
+            
+            self._performance_stats['cache_misses'] += 1
+            
+            # Initialize result containers
+            component_scores = {}
+            sub_scores = {}
+            analysis_breakdown = {}
+            recommendations = []
+            
+            # 1. Calculate hybrid similarity (TF-IDF + SBERT)
+            if resume_text and job_text:
+                logger.debug("Calculating hybrid similarity")
+                hybrid_result = self.hybrid_calculator.calculate_similarity(
+                    resume_text, job_text, custom_weights
+                )
+                component_scores['hybrid'] = hybrid_result['similarity_score']
+                analysis_breakdown['hybrid'] = hybrid_result
+                self._performance_stats['component_usage']['hybrid'] += 1
+            else:
+                logger.warning("No text provided for hybrid similarity calculation")
+                component_scores['hybrid'] = 0.0
+                analysis_breakdown['hybrid'] = {'error': 'No text provided'}
+            
+            # 2. Calculate detailed sub-scores if requested
+            if include_sub_scores:
+                # Skills similarity
+                try:
+                    logger.debug("Calculating skills similarity")
+                    skills_result = self.skills_scorer.calculate_skills_similarity(
+                        resume, job_description
+                    )
+                    sub_scores['skills'] = {
+                        'overall_score': skills_result.overall_score,
+                        'matched_skills': len(skills_result.matched_skills),
+                        'missing_skills': len(skills_result.missing_skills),
+                        'category_scores': skills_result.category_scores,
+                        'confidence': skills_result.confidence_score
+                    }
+                    analysis_breakdown['skills'] = {
+                        'matched_skills': [
+                            {
+                                'skill': match.skill,
+                                'match_type': match.match_type,
+                                'confidence': match.confidence,
+                                'category': match.category
+                            }
+                            for match in skills_result.matched_skills[:10]  # Top 10
+                        ],
+                        'missing_skills': skills_result.missing_skills[:10],  # Top 10
+                        'extra_skills': skills_result.extra_skills[:5],  # Top 5
+                        'metadata': skills_result.metadata
+                    }
+                    component_scores['skills'] = skills_result.overall_score
+                    self._performance_stats['component_usage']['skills'] += 1
+                    
+                    # Generate skills recommendations
+                    if skills_result.missing_skills:
+                        recommendations.extend([
+                            f"Consider adding '{skill}' to your resume" 
+                            for skill in skills_result.missing_skills[:3]
+                        ])
+                    
+                except Exception as e:
+                    logger.warning(f"Skills similarity calculation failed: {e}")
+                    sub_scores['skills'] = {'error': str(e)}
+                    component_scores['skills'] = 0.0
+                
+                # Experience similarity
+                try:
+                    logger.debug("Calculating experience similarity")
+                    experience_result = self.experience_scorer.calculate_experience_similarity(
+                        resume, job_description, job_text
+                    )
+                    sub_scores['experience'] = {
+                        'overall_score': experience_result.overall_score,
+                        'years_experience': experience_result.years_experience,
+                        'required_years': experience_result.required_years,
+                        'seniority_match': experience_result.seniority_match,
+                        'industry_relevance': experience_result.industry_relevance,
+                        'progression_score': experience_result.progression_score,
+                        'confidence': experience_result.confidence_score
+                    }
+                    analysis_breakdown['experience'] = {
+                        'experience_gap': experience_result.years_experience - experience_result.required_years,
+                        'metadata': experience_result.metadata
+                    }
+                    component_scores['experience'] = experience_result.overall_score
+                    self._performance_stats['component_usage']['experience'] += 1
+                    
+                    # Generate experience recommendations
+                    if experience_result.years_experience < experience_result.required_years:
+                        gap = experience_result.required_years - experience_result.years_experience
+                        recommendations.append(
+                            f"Consider highlighting {gap:.1f} more years of relevant experience"
+                        )
+                    
+                except Exception as e:
+                    logger.warning(f"Experience similarity calculation failed: {e}")
+                    sub_scores['experience'] = {'error': str(e)}
+                    component_scores['experience'] = 0.0
+                
+                # Education similarity (simplified for now)
+                try:
+                    logger.debug("Calculating education similarity")
+                    education_score = self._calculate_education_similarity(resume, job_description)
+                    sub_scores['education'] = {
+                        'overall_score': education_score,
+                        'degree_match': len(resume.education) > 0,
+                        'education_count': len(resume.education)
+                    }
+                    analysis_breakdown['education'] = {
+                        'degrees': [
+                            {'degree': edu.degree, 'major': edu.major, 'institution': edu.institution}
+                            for edu in resume.education
+                        ]
+                    }
+                    component_scores['education'] = education_score
+                    self._performance_stats['component_usage']['education'] += 1
+                    
+                except Exception as e:
+                    logger.warning(f"Education similarity calculation failed: {e}")
+                    sub_scores['education'] = {'error': str(e)}
+                    component_scores['education'] = 0.0
+            
+            # 3. Calculate overall weighted score
+            overall_score = self._calculate_weighted_overall_score(
+                component_scores, custom_weights
+            )
+            
+            # 4. Generate additional recommendations
+            recommendations.extend(self._generate_general_recommendations(
+                component_scores, sub_scores, analysis_breakdown
+            ))
+            
+            # 5. Create comprehensive metadata
+            calculation_time = time.time() - start_time
+            metadata = {
+                'calculation_time_seconds': calculation_time,
+                'components_calculated': list(component_scores.keys()),
+                'sub_scores_included': include_sub_scores,
+                'custom_weights_used': custom_weights is not None,
+                'cache_used': False,
+                'resume_metadata': resume.metadata if hasattr(resume, 'metadata') else {},
+                'job_metadata': getattr(job_description, 'metadata', {}),
+                'engine_config': self._config.copy(),
+                'timestamp': time.time()
+            }
+            
+            # 6. Create comprehensive report
+            report = SimilarityReport(
+                overall_score=overall_score,
+                component_scores=component_scores,
+                sub_scores=sub_scores,
+                analysis_breakdown=analysis_breakdown,
+                recommendations=recommendations[:10],  # Limit to top 10
+                metadata=metadata
+            )
+            
+            # 7. Cache result if enabled
+            if self.enable_caching:
+                self._cache_result(cache_key, report)
+            
+            # 8. Update performance statistics
+            self._update_performance_stats(calculation_time, 'single')
+            
+            logger.info(f"Comprehensive similarity calculated: {overall_score:.1f}% in {calculation_time:.3f}s")
+            return report
+            
+        except Exception as e:
+            self._performance_stats['error_count'] += 1
+            logger.error(f"Comprehensive similarity calculation failed: {e}")
+            raise ValueError(f"Failed to calculate comprehensive similarity: {e}")
+    
+    def calculate_batch_similarity(self,
+                                 resumes: List['ParsedResume'],
+                                 job_description: 'ParsedJobDescription',
+                                 resume_texts: Optional[List[str]] = None,
+                                 job_text: str = "",
+                                 include_sub_scores: bool = True,
+                                 custom_weights: Optional[Dict[str, float]] = None,
+                                 progress_callback: Optional[callable] = None) -> List[SimilarityReport]:
+        """Calculate similarity for multiple resumes against one job description.
+        
+        Args:
+            resumes: List of parsed resume data
+            job_description: Parsed job description data
+            resume_texts: Optional list of raw resume texts
+            job_text: Raw job description text
+            include_sub_scores: Whether to calculate detailed sub-scores
+            custom_weights: Optional custom weights for components
+            progress_callback: Optional callback for progress updates
+            
+        Returns:
+            List of comprehensive similarity reports
+        """
+        import time
+        start_time = time.time()
+        
+        try:
+            logger.info(f"Starting batch similarity calculation for {len(resumes)} resumes")
+            
+            results = []
+            resume_texts = resume_texts or [""] * len(resumes)
+            
+            # Precompute job embeddings for optimization
+            if job_text and hasattr(self.hybrid_calculator.sbert_calculator, 'precompute_job_embeddings'):
+                logger.debug("Precomputing job embeddings for batch optimization")
+                job_embeddings = self.hybrid_calculator.sbert_calculator.precompute_job_embeddings(job_text)
+            else:
+                job_embeddings = {}
+            
+            # Process each resume
+            for i, (resume, resume_text) in enumerate(zip(resumes, resume_texts)):
+                try:
+                    logger.debug(f"Processing resume {i+1}/{len(resumes)}")
+                    
+                    # Calculate similarity for this resume
+                    report = self.calculate_comprehensive_similarity(
+                        resume=resume,
+                        job_description=job_description,
+                        resume_text=resume_text,
+                        job_text=job_text,
+                        include_sub_scores=include_sub_scores,
+                        custom_weights=custom_weights
+                    )
+                    
+                    # Add batch-specific metadata
+                    report.metadata['batch_index'] = i
+                    report.metadata['batch_size'] = len(resumes)
+                    
+                    results.append(report)
+                    
+                    # Call progress callback if provided
+                    if progress_callback:
+                        progress_callback(i + 1, len(resumes), report.overall_score)
+                    
+                except Exception as e:
+                    logger.warning(f"Batch calculation failed for resume {i}: {e}")
+                    # Create error report
+                    error_report = SimilarityReport(
+                        overall_score=0.0,
+                        component_scores={'error': 0.0},
+                        sub_scores={'error': str(e)},
+                        analysis_breakdown={'error': str(e)},
+                        recommendations=[f"Error processing resume: {str(e)}"],
+                        metadata={
+                            'batch_index': i,
+                            'batch_size': len(resumes),
+                            'error': str(e),
+                            'calculation_failed': True
+                        }
+                    )
+                    results.append(error_report)
+            
+            # Update performance statistics
+            calculation_time = time.time() - start_time
+            self._update_performance_stats(calculation_time, 'batch')
+            
+            logger.info(f"Batch similarity calculation completed: {len(results)} results in {calculation_time:.3f}s")
+            return results
+            
+        except Exception as e:
+            self._performance_stats['error_count'] += 1
+            logger.error(f"Batch similarity calculation failed: {e}")
+            raise ValueError(f"Failed to calculate batch similarity: {e}")
+    
+    def _calculate_education_similarity(self, 
+                                      resume: 'ParsedResume', 
+                                      job_description: 'ParsedJobDescription') -> float:
+        """Calculate education similarity score (simplified implementation).
+        
+        Args:
+            resume: Parsed resume data
+            job_description: Parsed job description data
+            
+        Returns:
+            Education similarity score (0-100)
+        """
+        try:
+            # Simple education scoring based on presence and level
+            if not resume.education:
+                return 30.0  # Some credit for experience even without formal education
+            
+            # Check for degree requirements (simplified)
+            has_bachelor = any('bachelor' in edu.degree.lower() for edu in resume.education)
+            has_master = any('master' in edu.degree.lower() for edu in resume.education)
+            has_phd = any('phd' in edu.degree.lower() or 'doctorate' in edu.degree.lower() for edu in resume.education)
+            
+            # Basic scoring
+            score = 50.0  # Base score for having education
+            
+            if has_bachelor:
+                score += 20.0
+            if has_master:
+                score += 15.0
+            if has_phd:
+                score += 10.0
+            
+            # Check for relevant majors (simplified)
+            job_text = getattr(job_description, 'description', '').lower()
+            for edu in resume.education:
+                if edu.major.lower() in job_text:
+                    score += 5.0
+                    break
+            
+            return min(100.0, score)
+            
+        except Exception as e:
+            logger.warning(f"Education similarity calculation failed: {e}")
+            return 50.0  # Default score
+    
+    def _calculate_weighted_overall_score(self,
+                                        component_scores: Dict[str, float],
+                                        custom_weights: Optional[Dict[str, float]] = None) -> float:
+        """Calculate weighted overall similarity score.
+        
+        Args:
+            component_scores: Dictionary of component scores
+            custom_weights: Optional custom weights for components
+            
+        Returns:
+            Weighted overall score (0-100)
+        """
+        try:
+            # Default weights
+            default_weights = {
+                'hybrid': 0.4,      # TF-IDF + SBERT combination
+                'skills': 0.3,      # Skills matching
+                'experience': 0.2,  # Experience matching
+                'education': 0.1    # Education matching
+            }
+            
+            # Use custom weights if provided
+            weights = custom_weights or default_weights
+            
+            # Calculate weighted score
+            total_score = 0.0
+            total_weight = 0.0
+            
+            for component, score in component_scores.items():
+                if component in weights and score > 0:  # Only include valid scores
+                    weight = weights[component]
+                    total_score += score * weight
+                    total_weight += weight
+            
+            # Normalize by actual weights used
+            if total_weight > 0:
+                overall_score = total_score / total_weight
+            else:
+                overall_score = 0.0
+            
+            return min(100.0, max(0.0, overall_score))
+            
+        except Exception as e:
+            logger.warning(f"Overall score calculation failed: {e}")
+            return 0.0
+    
+    def _generate_general_recommendations(self,
+                                        component_scores: Dict[str, float],
+                                        sub_scores: Dict[str, Any],
+                                        analysis_breakdown: Dict[str, Any]) -> List[str]:
+        """Generate general improvement recommendations.
+        
+        Args:
+            component_scores: Component scores
+            sub_scores: Detailed sub-scores
+            analysis_breakdown: Analysis breakdown
+            
+        Returns:
+            List of recommendation strings
+        """
+        recommendations = []
+        
+        try:
+            # Analyze component scores for recommendations
+            if component_scores.get('hybrid', 0) < 60:
+                recommendations.append("Consider improving keyword alignment with job description")
+            
+            if component_scores.get('skills', 0) < 70:
+                recommendations.append("Focus on highlighting relevant technical skills")
+            
+            if component_scores.get('experience', 0) < 60:
+                recommendations.append("Emphasize relevant work experience and achievements")
+            
+            if component_scores.get('education', 0) < 50:
+                recommendations.append("Consider adding relevant certifications or education")
+            
+            # Analyze sub-scores for specific recommendations
+            skills_data = sub_scores.get('skills', {})
+            if isinstance(skills_data, dict) and skills_data.get('missing_skills', 0) > 3:
+                recommendations.append("Address key missing skills through training or projects")
+            
+            experience_data = sub_scores.get('experience', {})
+            if isinstance(experience_data, dict):
+                exp_gap = experience_data.get('years_experience', 0) - experience_data.get('required_years', 0)
+                if exp_gap < -2:
+                    recommendations.append("Highlight transferable skills to compensate for experience gap")
+            
+            # General formatting recommendations
+            recommendations.append("Ensure resume format is ATS-friendly")
+            recommendations.append("Use action verbs and quantify achievements where possible")
+            
+        except Exception as e:
+            logger.warning(f"Recommendation generation failed: {e}")
+            recommendations.append("Review and optimize resume content for better job matching")
+        
+        return recommendations
+    
+    def _generate_cache_key(self,
+                          resume: 'ParsedResume',
+                          job_description: 'ParsedJobDescription',
+                          include_sub_scores: bool,
+                          custom_weights: Optional[Dict[str, float]]) -> str:
+        """Generate cache key for similarity calculation.
+        
+        Args:
+            resume: Parsed resume data
+            job_description: Parsed job description data
+            include_sub_scores: Whether sub-scores are included
+            custom_weights: Custom weights used
+            
+        Returns:
+            Cache key string
+        """
+        import hashlib
+        
+        try:
+            # Create content hash from key resume and job data
+            resume_content = f"{len(resume.skills)}|{len(resume.experience)}|{len(resume.education)}"
+            job_content = f"{len(getattr(job_description, 'skills_required', []))}|{getattr(job_description, 'experience_level', '')}"
+            
+            # Include configuration in hash
+            config_content = f"{include_sub_scores}|{str(custom_weights)}"
+            
+            # Combine all content
+            full_content = f"{resume_content}|{job_content}|{config_content}"
+            
+            # Generate hash
+            return hashlib.md5(full_content.encode()).hexdigest()
+            
+        except Exception as e:
+            logger.warning(f"Cache key generation failed: {e}")
+            return f"fallback_{time.time()}"
+    
+    def _cache_result(self, cache_key: str, report: SimilarityReport):
+        """Cache similarity calculation result.
+        
+        Args:
+            cache_key: Cache key
+            report: Similarity report to cache
+        """
+        try:
+            # Check cache size limit
+            if len(self._report_cache) >= self.cache_size_limit:
+                # Remove oldest entries (simple FIFO)
+                oldest_keys = list(self._report_cache.keys())[:self.cache_size_limit // 4]
+                for old_key in oldest_keys:
+                    del self._report_cache[old_key]
+                logger.debug(f"Removed {len(oldest_keys)} old cache entries")
+            
+            # Cache the result
+            self._report_cache[cache_key] = report
+            logger.debug(f"Cached similarity result with key: {cache_key[:8]}...")
+            
+        except Exception as e:
+            logger.warning(f"Result caching failed: {e}")
+    
+    def _update_performance_stats(self, calculation_time: float, calculation_type: str):
+        """Update performance statistics.
+        
+        Args:
+            calculation_time: Time taken for calculation
+            calculation_type: Type of calculation ('single' or 'batch')
+        """
+        try:
+            self._performance_stats['total_calculations'] += 1
+            self._performance_stats['total_calculation_time'] += calculation_time
+            
+            # Update average calculation time
+            n = self._performance_stats['total_calculations']
+            self._performance_stats['average_calculation_time'] = (
+                self._performance_stats['total_calculation_time'] / n
+            )
+            
+            # Update calculation type counters
+            if calculation_type == 'single':
+                self._performance_stats['single_calculations'] += 1
+            elif calculation_type == 'batch':
+                self._performance_stats['batch_calculations'] += 1
+            
+        except Exception as e:
+            logger.warning(f"Performance stats update failed: {e}")
+    
+    def get_performance_stats(self) -> Dict[str, Any]:
+        """Get comprehensive performance statistics for the similarity engine.
+        
+        Returns:
+            Dictionary with detailed performance metrics
+        """
+        stats = self._performance_stats.copy()
+        
+        # Add cache statistics
+        stats['cache_statistics'] = {
+            'cache_enabled': self.enable_caching,
+            'cache_size': len(self._report_cache),
+            'cache_size_limit': self.cache_size_limit,
+            'cache_hit_rate': (
+                stats['cache_hits'] / (stats['cache_hits'] + stats['cache_misses'])
+                if (stats['cache_hits'] + stats['cache_misses']) > 0 else 0.0
+            )
+        }
+        
+        # Add component calculator statistics
+        stats['component_statistics'] = {
+            'hybrid_calculator': self.hybrid_calculator.get_performance_stats(),
+            'skills_scorer': self.skills_scorer.get_performance_stats(),
+            'experience_scorer': self.experience_scorer.get_performance_stats()
+        }
+        
+        # Add configuration information
+        stats['configuration'] = self._config.copy()
+        
+        # Add memory usage estimation
+        stats['memory_usage'] = {
+            'cached_reports': len(self._report_cache),
+            'precomputed_embeddings': len(self._precomputed_embeddings)
+        }
+        
+        return stats
+    
+    def clear_cache(self):
+        """Clear all caches to free memory."""
+        try:
+            # Clear local caches
+            self._similarity_cache.clear()
+            self._report_cache.clear()
+            self._precomputed_embeddings.clear()
+            
+            # Clear component caches
+            self.hybrid_calculator.clear_cache()
+            
+            # Reset performance stats related to caching
+            self._performance_stats['cache_hits'] = 0
+            self._performance_stats['cache_misses'] = 0
+            
+            logger.info("Similarity engine cache cleared")
+            
+        except Exception as e:
+            logger.error(f"Cache clearing failed: {e}")
+    
+    def optimize_for_batch_processing(self, job_text: str):
+        """Optimize engine for batch processing by precomputing job-related data.
+        
+        Args:
+            job_text: Job description text for precomputation
+        """
+        try:
+            logger.info("Optimizing similarity engine for batch processing")
+            
+            # Precompute job embeddings if SBERT is available
+            if hasattr(self.hybrid_calculator.sbert_calculator, 'precompute_job_embeddings'):
+                self._precomputed_embeddings['job'] = (
+                    self.hybrid_calculator.sbert_calculator.precompute_job_embeddings(job_text)
+                )
+                logger.debug("Job embeddings precomputed for batch optimization")
+            
+            # Extract job keywords for TF-IDF optimization
+            if hasattr(self.hybrid_calculator.tfidf_calculator, 'extract_job_keywords'):
+                self._precomputed_embeddings['job_keywords'] = (
+                    self.hybrid_calculator.tfidf_calculator.extract_job_keywords(job_text)
+                )
+                logger.debug("Job keywords extracted for TF-IDF optimization")
+            
+            logger.info("Batch processing optimization completed")
+            
+        except Exception as e:
+            logger.warning(f"Batch optimization failed: {e}")
+    
+    def get_similarity_breakdown(self, report: SimilarityReport) -> Dict[str, Any]:
+        """Get detailed breakdown of similarity calculation for analysis.
+        
+        Args:
+            report: Similarity report to analyze
+            
+        Returns:
+            Dictionary with detailed breakdown and explanations
+        """
+        try:
+            breakdown = {
+                'overall_score': report.overall_score,
+                'score_components': {
+                    'component_scores': report.component_scores,
+                    'component_weights': self._get_component_weights(),
+                    'weighted_contributions': {}
+                },
+                'sub_score_analysis': report.sub_scores,
+                'key_strengths': [],
+                'key_weaknesses': [],
+                'improvement_areas': [],
+                'confidence_indicators': {}
+            }
+            
+            # Calculate weighted contributions
+            weights = self._get_component_weights()
+            for component, score in report.component_scores.items():
+                if component in weights:
+                    contribution = score * weights[component]
+                    breakdown['score_components']['weighted_contributions'][component] = contribution
+            
+            # Identify strengths and weaknesses
+            for component, score in report.component_scores.items():
+                if score >= 80:
+                    breakdown['key_strengths'].append(f"Strong {component} match ({score:.1f}%)")
+                elif score <= 50:
+                    breakdown['key_weaknesses'].append(f"Weak {component} match ({score:.1f}%)")
+            
+            # Extract improvement areas from recommendations
+            breakdown['improvement_areas'] = report.recommendations[:5]
+            
+            # Add confidence indicators
+            breakdown['confidence_indicators'] = {
+                'calculation_time': report.metadata.get('calculation_time_seconds', 0),
+                'components_calculated': len(report.component_scores),
+                'sub_scores_available': len(report.sub_scores),
+                'cache_used': report.metadata.get('cache_used', False)
+            }
+            
+            return breakdown
+            
+        except Exception as e:
+            logger.error(f"Similarity breakdown generation failed: {e}")
+            return {'error': str(e)}
+    
+    def _get_component_weights(self) -> Dict[str, float]:
+        """Get current component weights for scoring.
+        
+        Returns:
+            Dictionary of component weights
+        """
+        return {
+            'hybrid': 0.4,
+            'skills': 0.3,
+            'experience': 0.2,
+            'education': 0.1
+        }
