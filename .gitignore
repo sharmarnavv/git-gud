@@ -154,9 +154,24 @@ tmp/
 # Kiro IDE files
 .kiro/
 
-# Resume data and archives
+# Resume data and archives (sensitive data)
 archive/
 cleaned_resumes.csv
+sample_resumes/
+test_resumes/
+
+# CSV files (except ontology)
 *.csv
+!comprehensive_skills_ontology.csv
+!*ontology*.csv
+
+# Sample and test data
+sample_resume.txt
+sample_job.txt
+test_data.json
+
+# Demo outputs
+demo_output/
+analysis_results/
 
 trained_model/
