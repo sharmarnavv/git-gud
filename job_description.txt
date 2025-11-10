@@ -1,0 +1,68 @@
+Senior Software Engineer - Full Stack Development
+
+Company: TechCorp Solutions
+Location: San Francisco, CA (Hybrid)
+Type: Full-time
+
+ABOUT THE ROLE:
+We are seeking an experienced Senior Software Engineer to join our growing engineering team. You will be responsible for designing, developing, and maintaining scalable web applications that serve millions of users. This role offers the opportunity to work with cutting-edge technologies and make a significant impact on our product.
+
+REQUIRED QUALIFICATIONS:
+• 5+ years of professional software development experience
+• Strong proficiency in Python and JavaScript/TypeScript
+• Experience with modern web frameworks (Django, Flask, React, or Vue.js)
+• Solid understanding of RESTful API design and development
+• Experience with SQL databases (PostgreSQL, MySQL)
+• Knowledge of cloud platforms (AWS, Azure, or GCP)
+• Proficiency with version control systems (Git)
+• Experience with containerization (Docker) and orchestration (Kubernetes)
+• Strong problem-solving and analytical skills
+• Excellent communication and teamwork abilities
+• Bachelor's degree in Computer Science or related field
+
+PREFERRED QUALIFICATIONS:
+• Master's degree in Computer Science or related field
+• Experience with microservices architecture
+• Knowledge of CI/CD pipelines and DevOps practices
+• Experience with NoSQL databases (MongoDB, Redis)
+• Familiarity with message queues (RabbitMQ, Kafka)
+• Experience with test-driven development (TDD)
+• Open source contributions
+• Experience in Agile/Scrum development environments
+
+RESPONSIBILITIES:
+• Design and implement scalable, high-performance web applications
+• Write clean, maintainable, and well-documented code
+• Collaborate with cross-functional teams (product, design, QA)
+• Participate in code reviews and provide constructive feedback
+• Mentor junior developers and share knowledge with the team
+• Troubleshoot and debug complex technical issues
+• Contribute to architectural decisions and technical planning
+• Stay current with emerging technologies and industry trends
+• Ensure application security and data protection
+• Optimize application performance and scalability
+
+TECHNICAL STACK:
+• Backend: Python (Django/Flask), Node.js
+• Frontend: React, TypeScript, HTML5, CSS3
+• Databases: PostgreSQL, Redis, MongoDB
+• Cloud: AWS (EC2, S3, Lambda, RDS)
+• DevOps: Docker, Kubernetes, Jenkins, GitLab CI
+• Tools: Git, JIRA, Confluence, Slack
+
+WHAT WE OFFER:
+• Competitive salary: $130,000 - $180,000 (based on experience)
+• Comprehensive health, dental, and vision insurance
+• 401(k) with company match
+• Flexible work arrangements (hybrid/remote options)
+• Professional development budget ($2,000/year)
+• Conference attendance and training opportunities
+• Stock options and performance bonuses
+• Generous PTO and paid holidays
+• Modern office with latest technology
+• Collaborative and innovative work environment
+
+TO APPLY:
+Please submit your resume highlighting your relevant experience and technical skills. We look forward to hearing from you!
+
+TechCorp Solutions is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.

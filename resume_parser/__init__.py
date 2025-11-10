@@ -33,6 +33,13 @@ from .resume_exceptions import (
     ExperienceExtractionError,
     EducationExtractionError
 )
+from .suggestion_engine import (
+    SuggestionEngine,
+    Suggestion,
+    SuggestionEngineResult,
+    SuggestionCategory,
+    SuggestionPriority
+)
 
 __version__ = "1.0.0"
 __author__ = "sharmarnav"
@@ -67,5 +74,12 @@ __all__ = [
     "SkillsExtractionError",
     "ContactExtractionError",
     "ExperienceExtractionError",
-    "EducationExtractionError"
+    "EducationExtractionError",
+    
+    # Suggestion Engine
+    "SuggestionEngine",
+    "Suggestion",
+    "SuggestionEngineResult",
+    "SuggestionCategory",
+    "SuggestionPriority"
 ]

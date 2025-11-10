@@ -1,0 +1,86 @@
+================================================================================
+                    RESUME-JOB MATCHER - QUICK START
+================================================================================
+
+INSTALLATION:
+-------------
+1. pip install -r requirements.txt
+2. python -m spacy download en_core_web_sm
+
+USAGE:
+------
+1. Edit job_description.txt with your target job posting
+2. Run: python main.py your_resume.pdf
+3. Review match score and suggestions
+
+COMMAND OPTIONS:
+----------------
+python main.py resume.pdf                    # Basic analysis
+python main.py resume.pdf --job custom.txt   # Custom job description
+python main.py resume.pdf -o results.json    # Save to JSON
+python main.py resume.pdf --no-suggestions   # Quick analysis (faster)
+
+WHAT YOU GET:
+-------------
+✓ Overall match score (0-100%)
+✓ Component breakdown (skills, experience, education)
+✓ Matched vs missing skills
+✓ Quick wins (easy improvements)
+✓ Top priority suggestions
+✓ Improvement potential
+
+MATCH SCORE GUIDE:
+------------------
+🟢 80-100%: Excellent Match - Apply with confidence
+🟡 60-79%:  Good Match - Strong candidate with minor gaps
+🟠 40-59%:  Moderate Match - Address key gaps before applying
+🔴 0-39%:   Weak Match - Significant improvements needed
+
+TIPS:
+-----
+• Use well-formatted resume (PDF recommended)
+• List skills explicitly in dedicated section
+• Include complete job posting in job_description.txt
+• Focus on quick wins first
+• Re-run after making improvements
+
+EXAMPLE:
+--------
+$ python main.py resume.pdf
+
+Output:
+🟡 Overall Match Score: 72.5% - GOOD MATCH
+
+📈 COMPONENT BREAKDOWN
+Skills              ████████████████░░░░  75.0%
+Experience          ██████████████░░░░░░  70.0%
+Education           ████████████████████  95.0%
+
+🚀 QUICK WINS:
+1. Better highlight your existing skills (Impact: 60%, Effort: easy)
+2. Use ATS-friendly section headers (Impact: 60%, Effort: easy)
+...
+
+⭐ TOP PRIORITIES:
+1. [HIGH] Add Kubernetes to your skillset (Impact: 80%)
+2. [HIGH] Emphasize AWS experience (Impact: 75%)
+...
+
+📋 IMPROVEMENT SUMMARY
+Current Score: 72.5%
+Projected Score: 88.5% (+16%)
+
+DOCUMENTATION:
+--------------
+• USAGE.md - Detailed usage guide
+• README.md - Full documentation
+• PROJECT_SUMMARY.md - Complete project overview
+• docs/ - Technical documentation
+
+SUPPORT:
+--------
+For detailed help, see USAGE.md or README.md
+
+================================================================================
+Good luck with your job search! 🍀
+================================================================================

@@ -6,6 +6,20 @@
 
 **Advanced AI-powered system** that analyzes resumes against job descriptions using hybrid NLP techniques, providing detailed similarity scores and actionable improvement suggestions for optimal job matching.
 
+## 🚀 Quick Start
+
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Create job_description.txt with your job posting
+
+# 3. Run analysis
+python main.py your_resume.pdf
+```
+
+That's it! Get comprehensive match analysis with improvement suggestions in seconds.
+
 ## 🌟 Key Features
 
 ### 🔍 **Intelligent Document Processing**
@@ -95,25 +109,22 @@ python -c "import spacy; spacy.download('en_core_web_sm')"
 ```
 
 ### Basic Usage
+
 ```bash
-# Parse a resume
-python main.py parse-resume sample_resume.txt -o resume_data.json
+# Analyze your resume against job description
+python main.py resume.pdf
 
-# Parse job description
-python main.py parse-job sample_job.txt -o job_data.json
+# Use custom job description file
+python main.py resume.pdf --job custom_job.txt
 
-# Calculate similarity and get recommendations
-python main.py compare sample_resume.txt sample_job.txt -o analysis.json
+# Save detailed results to JSON
+python main.py resume.pdf --output results.json
+
+# Quick analysis without suggestions (faster)
+python main.py resume.pdf --no-suggestions
 ```
 
-### Run Demo
-```bash
-# Interactive demo showcasing all features
-python simple_demo.py
-
-# Full system demo (requires dependencies)
-python demo.py
-```
+**See [USAGE.md](USAGE.md) for detailed usage guide and examples.**
 
 ## 💻 API Usage
 
